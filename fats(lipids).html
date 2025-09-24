@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Back to Home (paste anywhere inside <body>) -->
+<a href="unit3index.html" class="u3-back" aria-label="Back to Unit 3 Home">
+  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15.5 19l-7-7 7-7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  <span>Home</span>
+</a>
+
+<style>
+  /* Unit 3 Back Button: scoped, unobtrusive */
+  .u3-back{
+    position: fixed; inset: 14px auto auto 14px;
+    display: inline-flex; align-items: center; gap: 8px;
+    padding: 10px 14px; border-radius: 999px;
+    text-decoration: none; font: 600 14px/1.1 system-ui,-apple-system,Segoe UI,Roboto,Arial;
+    color: #0f172a; background: #ffffff; border: 1px solid #e2e8f0;
+    box-shadow: 0 8px 24px rgba(2,6,23,.12); z-index: 9999;
+    transition: transform .12s ease, box-shadow .2s ease, border-color .2s ease;
+  }
+  .u3-back:hover{ transform: translateY(-1px); border-color:#cbd5e1; box-shadow: 0 12px 28px rgba(2,6,23,.16); }
+  .u3-back:active{ transform: translateY(0); }
+  .u3-back svg{ width: 18px; height: 18px }
+  /* Dark mode */
+  @media (prefers-color-scheme: dark){
+    .u3-back{ color:#e5eefc; background:#0f172a; border-color:#1f2937; box-shadow:none }
+    .u3-back:hover{ border-color:#334155 }
+  }
+  /* Respect in-page anchored headers */
+  @media (max-width:480px){ .u3-back{ padding: 9px 12px } }
+  /* Hide in print */
+  @media print{ .u3-back{ display:none !important } }
+</style>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Fats (Lipids) – Energy Reserves (Printable)</title>
+  <style>
+    :root{
+      --bg:#f7fafc; --card:#ffffff; --ink:#0f172a; --muted:#475569; --accent:#16a34a; --accent-2:#0ea5e9; --border:#e2e8f0; --shadow:0 6px 24px rgba(2,6,23,.08); --radius:16px;
+    }
+    *{box-sizing:border-box}
+    body{margin:0; color:var(--ink); background:var(--bg); font:16px/1.6 system-ui, -apple-system, Segoe UI, Roboto, Arial}
+    .wrap{max-width:1100px; margin:auto; padding:28px 16px}
+    .hero{background:linear-gradient(160deg,#ecfdf5,#eff6ff); border:1px solid var(--border); border-radius:var(--radius); padding:24px; box-shadow:var(--shadow)}
+    h1{margin:0 0 6px 0; font-size:clamp(28px,4vw,40px)}
+    .subtitle{margin:0; color:var(--muted)}
+    .card{background:var(--card); border:1px solid var(--border); border-radius:var(--radius); padding:18px 20px; box-shadow:var(--shadow)}
+    .lead{font-size:18px}
+    .grid{display:grid; gap:18px; grid-template-columns:repeat(12,1fr)}
+    .muted{color:var(--muted)}
+    .recap{background:#f0fdf4; border:1px solid #bbf7d0}
+    .tag{display:inline-block; padding:6px 10px; border-radius:999px; border:1px solid var(--border); background:#f8fafc; margin:4px 6px 0 0; font-size:14px}
+    /* Tables */
+    .table{width:100%; border-collapse:separate; border-spacing:0; overflow:hidden; border-radius:14px; border:1px solid var(--border); page-break-inside:auto}
+    .table thead th{background:#f1f5f9; color:#0b1220; text-align:left; font-weight:700; padding:10px 12px; border-bottom:1px solid var(--border)}
+    .table td{padding:10px 12px; vertical-align:top; border-bottom:1px solid var(--border)}
+    .table tr:last-child td{border-bottom:none}
+    .note{font-size:13px; color:var(--muted)}
+    .no-break{page-break-inside:avoid}
+    /* Print Styles */
+    @page { size: A4; margin: 14mm; }
+    @media print{
+      body{background:#fff}
+      .wrap{max-width:none; padding:0}
+      .hero, .card{box-shadow:none}
+      .hero{background:#fff}
+      .table thead th{background:#eaf0f8; -webkit-print-color-adjust:exact; print-color-adjust:exact}
+      a[href]:after{content:""}
+    }
+    @media (max-width: 840px){ .grid{grid-template-columns:1fr} }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <section class="hero no-break">
+      <h1>Fats (Lipids) – <span style="color:var(--accent)">Energy Reserves</span></h1>
+      <p class="subtitle">11th–12th grade • Definition & basics • Biochemistry • Classification • Sources & functions • One digestion diagram • Printable</p>
+    </section>
+
+    <div style="height:14px"></div>
+
+    <!-- Definition -->
+    <section class="card no-break" aria-label="Definition">
+      <h2 style="margin-top:0">Definition</h2>
+      <p class="lead">Fats are <strong>organic compounds</strong> made of <strong>Carbon (C), Hydrogen (H), and Oxygen (O)</strong>, sometimes with <strong>Phosphorus (P)</strong> or <strong>Nitrogen (N)</strong>.</p>
+      <ul style="margin:0 0 6px 18px">
+        <li>Provide <strong>concentrated energy</strong> (~<strong>9 kcal/g</strong>).</li>
+        <li>Stored as <strong>triglycerides</strong> (fatty acids + glycerol) in adipose tissue.</li>
+        <li>Essential for <strong>energy storage</strong>, <strong>insulation</strong>, and <strong>vitamin absorption</strong>.</li>
+      </ul>
+      <div>
+        <span class="tag">9 kcal/g</span>
+        <span class="tag">Triglycerides</span>
+        <span class="tag">A, D, E, K absorption</span>
+      </div>
+    </section>
+
+    <div style="height:14px"></div>
+
+    <!-- Biochemical Basics -->
+    <section class="card no-break" aria-label="Biochemical Basics of Fats">
+      <h2 style="margin-top:0">1) Biochemical Basics of Fats</h2>
+      <ul style="margin:0 0 6px 18px">
+        <li><strong>Building blocks</strong>: <strong>Fatty acids</strong> + <strong>Glycerol</strong>.</li>
+        <li>Fatty acids may be:
+          <ul style="margin:6px 0 6px 18px">
+            <li><strong>Saturated</strong> – no double bond; usually solid at room temperature (e.g., ghee, butter).</li>
+            <li><strong>Unsaturated</strong> – one/more double bonds; usually liquid oils (e.g., sunflower oil, fish oil).</li>
+          </ul>
+        </li>
+        <li>Special lipids: <strong>Phospholipids</strong> (cell membranes), <strong>Sterols</strong> (cholesterol, hormones).</li>
+      </ul>
+    </section>
+
+    <div style="height:14px"></div>
+
+    <!-- Classification -->
+    <section class="card no-break" aria-label="Classification of Fats">
+      <h2 style="margin-top:0">2) Classification of Fats (Basic)</h2>
+      <table class="table" aria-label="Fat classification">
+        <thead>
+          <tr>
+            <th>Type</th><th>Description</th><th>Examples</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td><strong>Simple lipids</strong></td><td>Esters of fatty acids with alcohol (glycerol)</td><td>Fats, oils</td></tr>
+          <tr><td><strong>Compound lipids</strong></td><td>Fat + another group (P, protein, carbohydrate)</td><td>Phospholipids, Lipoproteins</td></tr>
+          <tr><td><strong>Derived lipids</strong></td><td>Formed from hydrolysis of fats</td><td>Fatty acids, cholesterol, steroid hormones</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <div style="height:14px"></div>
+
+    <!-- Sources -->
+    <section class="card no-break" aria-label="Sources of Fats">
+      <h2 style="margin-top:0">3) Sources of Fats</h2>
+      <table class="table" aria-label="Fat sources">
+        <thead><tr><th>Category</th><th>Examples</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Animal sources</strong></td><td>Ghee, butter, meat fat, fish oil, egg yolk</td></tr>
+          <tr><td><strong>Plant sources</strong></td><td>Groundnut oil, coconut oil, sunflower oil, mustard oil, nuts, seeds</td></tr>
+        </tbody>
+      </table>
+      <p class="note">Tip: Prefer unsaturated fats (nuts, seeds, fish, plant oils); limit trans fats.</p>
+    </section>
+
+    <div style="height:14px"></div>
+
+    <!-- Functions -->
+    <section class="card no-break" aria-label="Functions of Fats">
+      <h2 style="margin-top:0">4) Functions of Fats</h2>
+      <table class="table" aria-label="Fat functions">
+        <thead><tr><th>Function</th><th>Explanation (Simple)</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Energy</strong></td><td>~9 kcal/g → about double that of carbs/proteins</td></tr>
+          <tr><td><strong>Storage</strong></td><td>Stored as triglycerides in adipose tissue</td></tr>
+          <tr><td><strong>Insulation</strong></td><td>Protects against heat loss; cushions organs</td></tr>
+          <tr><td><strong>Absorption</strong></td><td>Needed for fat‑soluble vitamins (A, D, E, K)</td></tr>
+          <tr><td><strong>Structural role</strong></td><td>Phospholipids form cell membranes</td></tr>
+          <tr><td><strong>Hormones</strong></td><td>Steroid hormones & bile salts derived from cholesterol</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <div style="height:14px"></div>
+
+    <!-- Health aspects -->
+    <section class="card no-break" aria-label="Health Aspects">
+      <h2 style="margin-top:0">5) Health Aspects</h2>
+      <table class="table" aria-label="Fat health aspects">
+        <thead><tr><th>Aspect</th><th>Details</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Deficiency</strong></td><td>Poor growth, dry skin, infertility, vitamin A/D/E/K deficiency</td></tr>
+          <tr><td><strong>Excess</strong></td><td>Obesity, atherosclerosis, heart disease, hypertension</td></tr>
+          <tr><td><strong>RDA</strong></td><td><em>20–30%</em> of daily calories (~30–50 g/day)</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <div style="height:14px"></div>
+
+    <!-- Digestion Diagram -->
+    <section class="card no-break" aria-label="Digestion of Fats – Simplified Flow">
+      <h2 style="margin-top:0">6) Digestion of Fats – Simplified Flow</h2>
+      <svg viewBox="0 0 980 560" width="100%" height="auto" aria-label="Fat digestion flow">
+        <defs>
+          <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+            <path d="M0,0 L0,6 L9,3 z" fill="#16a34a" />
+          </marker>
+        </defs>
+        <!-- Food -->
+        <rect x="350" y="20" width="300" height="48" rx="12" ry="12" fill="#ffffff" stroke="#cbd5e1"/>
+        <text x="500" y="50" text-anchor="middle" font-family="system-ui,Segoe UI,Arial" font-size="16">FOOD (Ghee, Oil, Butter, Nuts)</text>
+        <line x1="500" y1="68" x2="500" y2="100" stroke="#16a34a" stroke-width="3" marker-end="url(#arrow)"/>
+
+        <!-- Mouth -->
+        <rect x="270" y="100" width="460" height="66" rx="12" ry="12" fill="#ffffff" stroke="#cbd5e1"/>
+        <text x="500" y="128" text-anchor="middle" font-family="system-ui,Segoe UI,Arial" font-size="16">[Mouth] – No fat digestion (only chewing)</text>
+        <line x1="500" y1="166" x2="500" y2="198" stroke="#16a34a" stroke-width="3" marker-end="url(#arrow)"/>
+
+        <!-- Stomach -->
+        <rect x="270" y="198" width="460" height="80" rx="12" ry="12" fill="#ffffff" stroke="#cbd5e1"/>
+        <text x="500" y="226" text-anchor="middle" font-family="system-ui,Segoe UI,Arial" font-size="16">[Stomach] – Minimal digestion (gastric lipase)</text>
+        <line x1="500" y1="278" x2="500" y2="310" stroke="#16a34a" stroke-width="3" marker-end="url(#arrow)"/>
+
+        <!-- Small Intestine -->
+        <rect x="120" y="310" width="760" height="120" rx="12" ry="12" fill="#ffffff" stroke="#cbd5e1"/>
+        <text x="500" y="340" text-anchor="middle" font-family="system-ui,Segoe UI,Arial" font-size="16">[Small Intestine]</text>
+        <text x="500" y="362" text-anchor="middle" font-family="system-ui,Segoe UI,Arial" font-size="14" fill="#475569">Bile salts (liver) emulsify fats → tiny droplets</text>
+        <text x="500" y="382" text-anchor="middle" font-family="system-ui,Segoe UI,Arial" font-size="14" fill="#475569">Pancreatic lipase: Fats → Fatty acids + Glycerol</text>
+        <line x1="500" y1="430" x2="500" y2="462" stroke="#16a34a" stroke-width="3" marker-end="url(#arrow)"/>
+
+        <!-- Absorption -->
+        <rect x="260" y="462" width="480" height="66" rx="12" ry="12" fill="#ffffff" stroke="#cbd5e1"/>
+        <text x="500" y="490" text-anchor="middle" font-family="system-ui,Segoe UI,Arial" font-size="16">[Absorption] – Lacteals (lymph) → blood</text>
+        <text x="500" y="510" text-anchor="middle" font-family="system-ui,Segoe UI,Arial" font-size="13" fill="#334155">Fatty acids + glycerol absorbed by villi (lacteals)</text>
+        <line x1="500" y1="528" x2="500" y2="548" stroke="#16a34a" stroke-width="3"/>
+
+        <!-- End result note -->
+        <text x="500" y="556" text-anchor="middle" font-family="system-ui,Segoe UI,Arial" font-size="13" fill="#334155">End result: Stored (triglycerides), energy use, hormones, cell membranes</text>
+      </svg>
+      <p class="muted" style="margin-top:8px">One diagram: emulsification → enzymatic breakdown → absorption via lacteals.</p>
+    </section>
+
+    <div style="height:14px"></div>
+
+    <!-- Recap -->
+    <section class="card recap no-break" aria-label="Quick Recap">
+      <h3 style="margin-top:0">Quick Recap for Students</h3>
+      <ul style="margin:0 0 6px 18px">
+        <li><strong>Fats</strong> = energy‑dense (~9 kcal/g) from fatty acids + glycerol.</li>
+        <li>Classes: <strong>Simple</strong>, <strong>Compound</strong>, <strong>Derived</strong> lipids.</li>
+        <li>Sources: oils, ghee, nuts, fish, butter.</li>
+        <li>Functions: energy, storage, insulation, vitamin absorption, hormones, membranes.</li>
+        <li>Health: deficiency → dry skin, fat‑soluble vitamin deficiency; excess → obesity/heart disease.</li>
+      </ul>
+    </section>
+
+    <p class="muted" style="text-align:center; font-size:13px; margin-top:16px">Print on A4 (portrait). Want a Macronutrient Comparison Table next (Carbs vs Proteins vs Fats)?</p>
+  </div>
+</body>
+</html>

@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Back to Home (paste anywhere inside <body>) -->
+<a href="unit3index.html" class="u3-back" aria-label="Back to Unit 3 Home">
+  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15.5 19l-7-7 7-7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  <span>Home</span>
+</a>
+
+<style>
+  /* Unit 3 Back Button: scoped, unobtrusive */
+  .u3-back{
+    position: fixed; inset: 14px auto auto 14px;
+    display: inline-flex; align-items: center; gap: 8px;
+    padding: 10px 14px; border-radius: 999px;
+    text-decoration: none; font: 600 14px/1.1 system-ui,-apple-system,Segoe UI,Roboto,Arial;
+    color: #0f172a; background: #ffffff; border: 1px solid #e2e8f0;
+    box-shadow: 0 8px 24px rgba(2,6,23,.12); z-index: 9999;
+    transition: transform .12s ease, box-shadow .2s ease, border-color .2s ease;
+  }
+  .u3-back:hover{ transform: translateY(-1px); border-color:#cbd5e1; box-shadow: 0 12px 28px rgba(2,6,23,.16); }
+  .u3-back:active{ transform: translateY(0); }
+  .u3-back svg{ width: 18px; height: 18px }
+  /* Dark mode */
+  @media (prefers-color-scheme: dark){
+    .u3-back{ color:#e5eefc; background:#0f172a; border-color:#1f2937; box-shadow:none }
+    .u3-back:hover{ border-color:#334155 }
+  }
+  /* Respect in-page anchored headers */
+  @media (max-width:480px){ .u3-back{ padding: 9px 12px } }
+  /* Hide in print */
+  @media print{ .u3-back{ display:none !important } }
+</style>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Deficiency Diseases – Complete Notes (Printable)</title>
+  <style>
+    :root{
+      --bg:#f7fafc; --card:#ffffff; --ink:#0f172a; --muted:#475569; --accent:#16a34a; --accent-2:#0ea5e9; --border:#e2e8f0; --shadow:0 6px 24px rgba(2,6,23,.08); --radius:16px;
+    }
+    *{box-sizing:border-box}
+    body{margin:0; color:var(--ink); background:var(--bg); font:16px/1.6 system-ui, -apple-system, Segoe UI, Roboto, Arial}
+    .wrap{max-width:1200px; margin:auto; padding:28px 16px}
+    .hero{background:linear-gradient(160deg,#ecfdf5,#eff6ff); border:1px solid var(--border); border-radius:var(--radius); padding:24px; box-shadow:var(--shadow)}
+    h1{margin:0 0 6px 0; font-size:clamp(28px,4vw,40px)}
+    .subtitle{margin:0; color:var(--muted)}
+    .card{background:var(--card); border:1px solid var(--border); border-radius:var(--radius); padding:18px 20px; box-shadow:var(--shadow)}
+    .lead{font-size:18px}
+    .grid{display:grid; gap:18px; grid-template-columns:repeat(12,1fr)}
+    .muted{color:var(--muted)}
+    .recap{background:#f0fdf4; border:1px solid #bbf7d0}
+    .tag{display:inline-block; padding:6px 10px; border-radius:999px; border:1px solid var(--border); background:#f8fafc; margin:4px 6px 0 0; font-size:14px}
+    /* Tables */
+    .table{width:100%; border-collapse:separate; border-spacing:0; overflow:hidden; border-radius:14px; border:1px solid var(--border); page-break-inside:auto}
+    .table thead th{background:#f1f5f9; color:#0b1220; text-align:left; font-weight:700; padding:10px 12px; border-bottom:1px solid var(--border)}
+    .table td{padding:10px 12px; vertical-align:top; border-bottom:1px solid var(--border)}
+    .table tr:last-child td{border-bottom:none}
+    .note{font-size:13px; color:var(--muted)}
+    .no-break{page-break-inside:avoid}
+    /* Print Styles */
+    @page { size: A4; margin: 12mm; }
+    @media print{
+      body{background:#fff}
+      .wrap{max-width:none; padding:0}
+      .hero, .card{box-shadow:none}
+      .hero{background:#fff}
+      .table thead th{background:#eaf0f8; -webkit-print-color-adjust:exact; print-color-adjust:exact}
+      a[href]:after{content:""}
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <section class="hero no-break">
+      <h1>Deficiency Diseases – <span style="color:var(--accent)">Complete Notes</span></h1>
+      <p class="subtitle">11th–12th grade • Definitions • Complete table across all nutrients • Simple diagram linking digestion & deficiency • Printable</p>
+    </section>
+
+    <div style="height:14px"></div>
+
+    <!-- What are Deficiency Diseases? -->
+    <section class="card no-break" aria-label="What are Deficiency Diseases?">
+      <h2 style="margin-top:0">1) What are Deficiency Diseases?</h2>
+      <p class="lead"><strong>Deficiency diseases</strong> occur when the body does not get <strong>enough of a particular nutrient</strong> for a long time.</p>
+      <ul style="margin:0 0 6px 18px">
+        <li>Affect <strong>growth, energy, immunity, and normal functioning</strong>.</li>
+        <li>Can be prevented by eating a <strong>balanced diet</strong>.</li>
+      </ul>
+      <div>
+        <span class="tag">Balanced diet</span>
+        <span class="tag">Prevention</span>
+        <span class="tag">Long‑term lack</span>
+      </div>
+    </section>
+
+    <div style="height:14px"></div>
+
+    <!-- Complete Table -->
+    <section class="card no-break" aria-label="Deficiency Diseases – Complete Table">
+      <h2 style="margin-top:0">2) Deficiency Diseases – Complete Table</h2>
+      <table class="table" aria-label="Deficiency table">
+        <thead>
+          <tr>
+            <th style="width:26%">Nutrient</th>
+            <th style="width:34%">Deficiency Disease / Condition</th>
+            <th style="width:40%">Symptoms (Simple)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td><strong>Carbohydrates</strong></td><td>Ketosis, fatigue</td><td>Weakness, tiredness</td></tr>
+          <tr><td><strong>Proteins</strong></td><td><strong>Kwashiorkor</strong>, <strong>Marasmus</strong></td><td>Swelling (edema), muscle wasting, stunted growth</td></tr>
+          <tr><td><strong>Fats</strong></td><td>Poor growth; fat‑soluble vitamin deficiency (A/D/E/K)</td><td>Dry skin, weak immunity</td></tr>
+          <tr><td><strong>Water</strong></td><td>Dehydration</td><td>Thirst, kidney stones, constipation</td></tr>
+          <tr><td><strong>Fiber</strong></td><td>Constipation, piles</td><td>Hard stool, indigestion</td></tr>
+          <tr><td><strong>Calcium</strong></td><td><strong>Rickets</strong>, <strong>Osteoporosis</strong></td><td>Soft bones (children), fragile bones (adults)</td></tr>
+          <tr><td><strong>Phosphorus</strong></td><td>Weak bones, poor energy</td><td>Bone pain, weakness</td></tr>
+          <tr><td><strong>Iron</strong></td><td><strong>Anemia</strong></td><td>Pale skin, tiredness, weakness</td></tr>
+          <tr><td><strong>Iodine</strong></td><td><strong>Goiter</strong></td><td>Swollen neck, thyroid problems</td></tr>
+          <tr><td><strong>Zinc</strong></td><td>Growth retardation</td><td>Poor healing, weak immunity</td></tr>
+          <tr><td><strong>Sodium / Potassium</strong></td><td>Muscle cramps</td><td>Weak muscles, irregular heartbeat</td></tr>
+          <tr><td><strong>Magnesium</strong></td><td>Muscle weakness, tremors</td><td>Cramps, poor coordination</td></tr>
+          <tr><td><strong>Fluoride</strong></td><td><strong>Dental caries</strong></td><td>Weak teeth</td></tr>
+          <tr><td><strong>Vitamin A</strong></td><td><strong>Night blindness</strong></td><td>Poor vision in dim light</td></tr>
+          <tr><td><strong>Vitamin D</strong></td><td><strong>Rickets</strong> (children), <strong>Osteomalacia</strong> (adults)</td><td>Soft bones, bent legs</td></tr>
+          <tr><td><strong>Vitamin E</strong></td><td>Muscle weakness, infertility</td><td>Nerve & muscle damage</td></tr>
+          <tr><td><strong>Vitamin K</strong></td><td>Excessive bleeding</td><td>Blood fails to clot</td></tr>
+          <tr><td><strong>Vitamin C</strong></td><td><strong>Scurvy</strong></td><td>Bleeding gums, poor wound healing</td></tr>
+          <tr><td><strong>Vitamin B<sub>1</sub> (Thiamine)</strong></td><td><strong>Beri‑beri</strong></td><td>Nerve problems, muscle weakness</td></tr>
+          <tr><td><strong>Vitamin B<sub>2</sub> (Riboflavin)</strong></td><td><strong>Cheilosis</strong></td><td>Cracks at mouth corners, eye irritation</td></tr>
+          <tr><td><strong>Vitamin B<sub>3</sub> (Niacin)</strong></td><td><strong>Pellagra</strong></td><td>3 D’s: Dermatitis, Diarrhea, Dementia</td></tr>
+          <tr><td><strong>Vitamin B<sub>6</sub> (Pyridoxine)</strong></td><td>Anemia, nerve irritation</td><td>Irritability, convulsions</td></tr>
+          <tr><td><strong>Vitamin B<sub>9</sub> (Folic acid)</strong></td><td><strong>Megaloblastic anemia</strong></td><td>Large, immature RBCs</td></tr>
+          <tr><td><strong>Vitamin B<sub>12</sub> (Cobalamin)</strong></td><td><strong>Pernicious anemia</strong></td><td>Nerve damage, memory loss</td></tr>
+        </tbody>
+      </table>
+      <p class="note">Remember: Multiple deficiencies can occur together (e.g., low protein + low calories). Diet variety and fortification (iodized salt, fortified milk/oils) help prevent deficiencies.</p>
+    </section>
+
+    <div style="height:14px"></div>
+
+    <!-- Diagram: Why Deficiencies Occur -->
+    <section class="card no-break" aria-label="Diagram – Why Deficiencies Occur (Digestion Link)">
+      <h2 style="margin-top:0">3) Diagram – Why Deficiencies Occur (Simplified Digestion Link)</h2>
+      <svg viewBox="0 0 980 560" width="100%" height="auto" aria-label="Why deficiencies occur diagram">
+        <defs>
+          <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+            <path d="M0,0 L0,6 L9,3 z" fill="#16a34a" />
+          </marker>
+        </defs>
+        <!-- Food -->
+        <rect x="280" y="20" width="420" height="48" rx="12" ry="12" fill="#ffffff" stroke="#cbd5e1"/>
+        <text x="490" y="50" text-anchor="middle" font-family="system-ui,Segoe UI,Arial" font-size="16">FOOD (Rice, Pulses, Vegetables, Fruits, Milk, Meat)</text>
+        <line x1="490" y1="68" x2="490" y2="100" stroke="#16a34a" stroke-width="3" marker-end="url(#arrow)"/>
+
+        <!-- Digestion -->
+        <rect x="260" y="100" width="460" height="66" rx="12" ry="12" fill="#ffffff" stroke="#cbd5e1"/>
+        <text x="490" y="128" text-anchor="middle" font-family="system-ui,Segoe UI,Arial" font-size="16">[Digestion in Mouth, Stomach, Intestine]</text>
+        <line x1="490" y1="166" x2="490" y2="198" stroke="#16a34a" stroke-width="3" marker-end="url(#arrow)"/>
+
+        <!-- Absorption -->
+        <rect x="250" y="198" width="480" height="66" rx="12" ry="12" fill="#ffffff" stroke="#cbd5e1"/>
+        <text x="490" y="226" text-anchor="middle" font-family="system-ui,Segoe UI,Arial" font-size="16">[Absorption by Villi into Blood]</text>
+        <line x1="490" y1="264" x2="490" y2="296" stroke="#16a34a" stroke-width="3" marker-end="url(#arrow)"/>
+
+        <!-- Condition Split -->
+        <rect x="110" y="296" width="320" height="80" rx="12" ry="12" fill="#fff" stroke="#cbd5e1"/>
+        <text x="270" y="330" text-anchor="middle" font-family="system-ui,Segoe UI,Arial" font-size="14">IF DIET LACKS NUTRIENT → No absorption</text>
+        <line x1="270" y1="376" x2="270" y2="408" stroke="#16a34a" stroke-width="3" marker-end="url(#arrow)"/>
+
+        <rect x="550" y="296" width="320" height="80" rx="12" ry="12" fill="#fff" stroke="#cbd5e1"/>
+        <text x="710" y="330" text-anchor="middle" font-family="system-ui,Segoe UI,Arial" font-size="14">IF MALABSORPTION (disease) → Poor absorption</text>
+        <line x1="710" y1="376" x2="710" y2="408" stroke="#16a34a" stroke-width="3" marker-end="url(#arrow)"/>
+
+        <!-- Deficiency outcomes -->
+        <rect x="140" y="408" width="260" height="118" rx="12" ry="12" fill="#fff" stroke="#cbd5e1"/>
+        <text x="270" y="432" text-anchor="middle" font-family="system-ui,Segoe UI,Arial" font-size="16"><tspan font-weight="bold">DEFICIENCY DISEASE</tspan></text>
+        <text x="270" y="456" text-anchor="middle" font-family="system-ui,Segoe UI,Arial" font-size="14" fill="#475569">Lack of carbs → Fatigue</text>
+        <text x="270" y="476" text-anchor="middle" font-family="system-ui,Segoe UI,Arial" font-size="14" fill="#475569">Lack of proteins → Kwashiorkor</text>
+        <text x="270" y="496" text-anchor="middle" font-family="system-ui,Segoe UI,Arial" font-size="14" fill="#475569">Lack of iron → Anemia</text>
+        <text x="270" y="516" text-anchor="middle" font-family="system-ui,Segoe UI,Arial" font-size="14" fill="#475569">Lack of vitamins → Night blindness / Scurvy / Rickets</text>
+
+        <rect x="580" y="408" width="260" height="118" rx="12" ry="12" fill="#fff" stroke="#cbd5e1"/>
+        <text x="710" y="432" text-anchor="middle" font-family="system-ui,Segoe UI,Arial" font-size="16"><tspan font-weight="bold">DEFICIENCY (Other)</tspan></text>
+        <text x="710" y="456" text-anchor="middle" font-family="system-ui,Segoe UI,Arial" font-size="14" fill="#475569">Poor gut absorption (e.g., diarrhea, worms)</text>
+        <text x="710" y="476" text-anchor="middle" font-family="system-ui,Segoe UI,Arial" font-size="14" fill="#475569">Drug/alcohol interference</text>
+        <text x="710" y="496" text-anchor="middle" font-family="system-ui,Segoe UI,Arial" font-size="14" fill="#475569">Increased need (pregnancy, illness)</text>
+      </svg>
+      <p class="muted" style="margin-top:8px">Diagram links diet quality and intestinal absorption with deficiency outcomes.</p>
+    </section>
+
+    <div style="height:14px"></div>
+
+    <!-- Recap -->
+    <section class="card recap no-break" aria-label="Quick Recap for Students">
+      <h3 style="margin-top:0">✅ Quick Recap for Students</h3>
+      <ul style="margin:0 0 6px 18px">
+        <li>Deficiency diseases are caused by <strong>lack of nutrients</strong>.</li>
+        <li>Carbs/Proteins/Fats → affect <strong>energy & growth</strong>.</li>
+        <li>Minerals/Vitamins → affect <strong>blood, bones, skin, nerves</strong>.</li>
+        <li><strong>Balanced diet</strong> and food variety are the best prevention.</li>
+      </ul>
+    </section>
+
+    <p class="muted" style="text-align:center; font-size:13px; margin-top:16px">Print on A4 (portrait). Want a matching table for <strong>Excess Intake Diseases</strong> next (obesity, hypertension, diabetes, kidney stones, etc.)?</p>
+  </div>
+</body>
+</html>

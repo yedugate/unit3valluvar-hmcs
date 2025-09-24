@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Back to Home (paste anywhere inside <body>) -->
+<a href="unit3index.html" class="u3-back" aria-label="Back to Unit 3 Home">
+  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15.5 19l-7-7 7-7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  <span>Home</span>
+</a>
+
+<style>
+  /* Unit 3 Back Button: scoped, unobtrusive */
+  .u3-back{
+    position: fixed; inset: 14px auto auto 14px;
+    display: inline-flex; align-items: center; gap: 8px;
+    padding: 10px 14px; border-radius: 999px;
+    text-decoration: none; font: 600 14px/1.1 system-ui,-apple-system,Segoe UI,Roboto,Arial;
+    color: #0f172a; background: #ffffff; border: 1px solid #e2e8f0;
+    box-shadow: 0 8px 24px rgba(2,6,23,.12); z-index: 9999;
+    transition: transform .12s ease, box-shadow .2s ease, border-color .2s ease;
+  }
+  .u3-back:hover{ transform: translateY(-1px); border-color:#cbd5e1; box-shadow: 0 12px 28px rgba(2,6,23,.16); }
+  .u3-back:active{ transform: translateY(0); }
+  .u3-back svg{ width: 18px; height: 18px }
+  /* Dark mode */
+  @media (prefers-color-scheme: dark){
+    .u3-back{ color:#e5eefc; background:#0f172a; border-color:#1f2937; box-shadow:none }
+    .u3-back:hover{ border-color:#334155 }
+  }
+  /* Respect in-page anchored headers */
+  @media (max-width:480px){ .u3-back{ padding: 9px 12px } }
+  /* Hide in print */
+  @media print{ .u3-back{ display:none !important } }
+</style>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sources of Nutrients – Complete Table (Printable)</title>
+  <style>
+    :root{
+      --bg:#f7fafc; --card:#ffffff; --ink:#0f172a; --muted:#475569; --accent:#16a34a; --accent-2:#0ea5e9; --border:#e2e8f0; --shadow:0 6px 24px rgba(2,6,23,.08); --radius:16px;
+    }
+    *{box-sizing:border-box}
+    body{margin:0; color:var(--ink); background:var(--bg); font:16px/1.6 system-ui, -apple-system, Segoe UI, Roboto, Arial}
+    .wrap{max-width:1200px; margin:auto; padding:28px 16px}
+    .hero{background:linear-gradient(160deg,#ecfdf5,#eff6ff); border:1px solid var(--border); border-radius:var(--radius); padding:24px; box-shadow:var(--shadow)}
+    h1{margin:0 0 6px 0; font-size:clamp(28px,4vw,40px)}
+    .subtitle{margin:0; color:var(--muted)}
+    .card{background:var(--card); border:1px solid var(--border); border-radius:var(--radius); padding:18px 20px; box-shadow:var(--shadow)}
+    .muted{color:var(--muted)}
+    .recap{background:#f0fdf4; border:1px solid #bbf7d0}
+    .note{font-size:13px; color:var(--muted)}
+    .no-break{page-break-inside:avoid}
+    .tight{margin-top:0}
+    /* Big table */
+    .table{width:100%; border-collapse:separate; border-spacing:0; overflow:hidden; border-radius:14px; border:1px solid var(--border); page-break-inside:auto}
+    .table thead th{background:#f1f5f9; color:#0b1220; text-align:left; font-weight:700; padding:10px 12px; border-bottom:1px solid var(--border)}
+    .table td{padding:10px 12px; vertical-align:top; border-bottom:1px solid var(--border)}
+    .table tr:last-child td{border-bottom:none}
+    /* Print Styles */
+    @page { size: A4; margin: 12mm; }
+    @media print{
+      body{background:#fff}
+      .wrap{max-width:none; padding:0}
+      .hero, .card{box-shadow:none}
+      .hero{background:#fff}
+      .table thead th{background:#eaf0f8; -webkit-print-color-adjust:exact; print-color-adjust:exact}
+      a[href]:after{content:""}
+      svg text{fill:#000}
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <section class="hero no-break">
+      <h1>Sources of Nutrients – <span style="color:var(--accent)">Complete Table</span></h1>
+      <p class="subtitle">11th–12th grade • Big consolidated sources table (macros + micros) • One digestion/absorption diagram • Printable</p>
+    </section>
+
+    <div style="height:14px"></div>
+
+    <!-- Consolidated Table -->
+    <section class="card no-break" aria-label="Sources of Nutrients – Complete Table">
+      <h2 class="tight">Consolidated Sources Table</h2>
+      <table class="table" aria-label="Complete sources table">
+        <thead>
+          <tr>
+            <th style="width:22%">Nutrient</th>
+            <th style="width:58%">Main Sources</th>
+            <th style="width:20%">Quick Note</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td><strong>Carbohydrates</strong></td><td>Rice, wheat, maize, potato, fruits, sugar, honey</td><td>Quick energy</td></tr>
+          <tr><td><strong>Proteins</strong></td><td>Pulses, soybean, nuts, milk, eggs, fish, meat</td><td>Growth & repair</td></tr>
+          <tr><td><strong>Fats</strong></td><td>Oils (groundnut, sunflower), ghee, butter, nuts, fish</td><td>Energy + A/D/E/K</td></tr>
+          <tr><td><strong>Water</strong></td><td>Drinking water, fruits (melon, orange), vegetables (cucumber, tomato), milk</td><td>Life solvent</td></tr>
+          <tr><td><strong>Fiber</strong></td><td>Whole grains, legumes, fruits, vegetables, nuts, seeds</td><td>Digestive health</td></tr>
+          <tr><td><strong>Calcium</strong></td><td>Milk, ragi, greens</td><td>Bones & teeth</td></tr>
+          <tr><td><strong>Phosphorus</strong></td><td>Milk, nuts, fish, pulses</td><td>Bones, ATP energy</td></tr>
+          <tr><td><strong>Iron</strong></td><td>Liver, spinach, dates, jaggery</td><td>Hemoglobin (O<sub>2</sub>)</td></tr>
+          <tr><td><strong>Iodine</strong></td><td>Iodized salt, sea foods</td><td>Thyroid function</td></tr>
+          <tr><td><strong>Zinc</strong></td><td>Nuts, legumes, meat, milk</td><td>Enzymes & healing</td></tr>
+          <tr><td><strong>Sodium</strong></td><td>Salt, cheese, bread</td><td>Nerve & fluids</td></tr>
+          <tr><td><strong>Potassium</strong></td><td>Banana, pulses, vegetables</td><td>Muscle & heart</td></tr>
+          <tr><td><strong>Magnesium</strong></td><td>Nuts, seeds, green leafy vegetables</td><td>Enzyme reactions</td></tr>
+          <tr><td><strong>Fluoride</strong></td><td>Drinking water, tea</td><td>Teeth & bones</td></tr>
+          <tr><td><strong>Vitamin A</strong></td><td>Carrot, papaya, fish liver oil, milk</td><td>Vision, skin</td></tr>
+          <tr><td><strong>Vitamin D</strong></td><td>Sunlight, fish, milk, egg yolk</td><td>Bones, Ca absorption</td></tr>
+          <tr><td><strong>Vitamin E</strong></td><td>Vegetable oils, nuts, seeds</td><td>Antioxidant</td></tr>
+          <tr><td><strong>Vitamin K</strong></td><td>Green leafy vegetables</td><td>Blood clotting</td></tr>
+          <tr><td><strong>Vitamin C</strong></td><td>Citrus fruits, amla, guava, tomato</td><td>Healing, immunity</td></tr>
+          <tr><td><strong>Vitamin B<sub>1</sub> (Thiamine)</strong></td><td>Whole grains, pulses, pork, nuts</td><td>Carb metabolism</td></tr>
+          <tr><td><strong>Vitamin B<sub>2</sub> (Riboflavin)</strong></td><td>Milk, eggs, green leafy vegetables</td><td>Energy metabolism</td></tr>
+          <tr><td><strong>Vitamin B<sub>3</sub> (Niacin)</strong></td><td>Meat, fish, groundnut, cereals</td><td>Energy metabolism</td></tr>
+          <tr><td><strong>Vitamin B<sub>5</sub> (Pantothenic acid)</strong></td><td>Eggs, fish, cereals</td><td>Coenzyme A</td></tr>
+          <tr><td><strong>Vitamin B<sub>6</sub> (Pyridoxine)</strong></td><td>Meat, banana, pulses, nuts</td><td>Amino acid metabolism</td></tr>
+          <tr><td><strong>Vitamin B<sub>7</sub> (Biotin)</strong></td><td>Egg yolk, nuts, yeast</td><td>Fat & carb metabolism</td></tr>
+          <tr><td><strong>Vitamin B<sub>9</sub> (Folic acid)</strong></td><td>Spinach, legumes, liver</td><td>DNA & RBC formation</td></tr>
+          <tr><td><strong>Vitamin B<sub>12</sub> (Cobalamin)</strong></td><td>Animal foods (meat, milk, eggs)</td><td>RBCs, nerves</td></tr>
+        </tbody>
+      </table>
+      <p class="note">Tip: Encourage whole foods first; use fortified options (iodized salt, fortified milk/oils) where needed.</p>
+    </section>
+
+    <div style="height:14px"></div>
+
+    <!-- Diagram -->
+    <section class="card no-break" aria-label="Digestion & Absorption (Simplified)">
+      <h2 class="tight">Digestion & Absorption – Simplified Diagram</h2>
+      <svg viewBox="0 0 980 560" width="100%" height="auto" aria-label="Consolidated nutrient absorption flow">
+        <defs>
+          <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+            <path d="M0,0 L0,6 L9,3 z" fill="#16a34a" />
+          </marker>
+        </defs>
+        <!-- Food -->
+        <rect x="300" y="20" width="380" height="48" rx="12" ry="12" fill="#ffffff" stroke="#cbd5e1"/>
+        <text x="490" y="50" text-anchor="middle" font-family="system-ui,Segoe UI,Arial" font-size="16">FOOD (Rice + Dal + Vegetables + Milk + Fruits)</text>
+        <line x1="490" y1="68" x2="490" y2="100" stroke="#16a34a" stroke-width="3" marker-end="url(#arrow)"/>
+
+        <!-- Mouth -->
+        <rect x="260" y="100" width="460" height="66" rx="12" ry="12" fill="#ffffff" stroke="#cbd5e1"/>
+        <text x="490" y="128" text-anchor="middle" font-family="system-ui,Segoe UI,Arial" font-size="16">[Mouth] – Starch digestion begins (saliva)</text>
+        <line x1="490" y1="166" x2="490" y2="198" stroke="#16a34a" stroke-width="3" marker-end="url(#arrow)"/>
+
+        <!-- Stomach -->
+        <rect x="240" y="198" width="500" height="80" rx="12" ry="12" fill="#ffffff" stroke="#cbd5e1"/>
+        <text x="490" y="226" text-anchor="middle" font-family="system-ui,Segoe UI,Arial" font-size="16">[Stomach] – Proteins partly digested (pepsin + HCl)</text>
+        <line x1="490" y1="278" x2="490" y2="310" stroke="#16a34a" stroke-width="3" marker-end="url(#arrow)"/>
+
+        <!-- Small Intestine -->
+        <rect x="120" y="310" width="740" height="150" rx="12" ry="12" fill="#ffffff" stroke="#cbd5e1"/>
+        <text x="490" y="338" text-anchor="middle" font-family="system-ui,Segoe UI,Arial" font-size="16">[Small Intestine]</text>
+        <text x="490" y="360" text-anchor="middle" font-family="system-ui,Segoe UI,Arial" font-size="14" fill="#475569">Carbs → Glucose • Proteins → Amino acids • Fats → Fatty acids + Glycerol</text>
+        <text x="490" y="382" text-anchor="middle" font-family="system-ui,Segoe UI,Arial" font-size="14" fill="#475569">Vitamins & Minerals → absorbed; Water absorbed; Fiber adds bulk</text>
+        <line x1="490" y1="430" x2="490" y2="462" stroke="#16a34a" stroke-width="3" marker-end="url(#arrow)"/>
+
+        <!-- Absorption & Transport -->
+        <rect x="180" y="462" width="620" height="80" rx="12" ry="12" fill="#ffffff" stroke="#cbd5e1"/>
+        <text x="490" y="490" text-anchor="middle" font-family="system-ui,Segoe UI,Arial" font-size="16">[Absorption & Transport]</text>
+        <text x="490" y="512" text-anchor="middle" font-family="system-ui,Segoe UI,Arial" font-size="14" fill="#475569">Glucose & AAs → Blood • Fatty acids & glycerol → Lymph → Blood • Minerals/Vitamins/Water → Blood</text>
+
+        <!-- End result note -->
+        <text x="490" y="548" text-anchor="middle" font-family="system-ui,Segoe UI,Arial" font-size="13" fill="#334155">Assimilation → Energy • Growth • Repair • Protection</text>
+      </svg>
+    </section>
+
+    <div style="height:14px"></div>
+
+    <!-- Recap -->
+    <section class="card recap no-break" aria-label="Quick Recap for Students">
+      <h3 class="tight">✅ Quick Recap for Students</h3>
+      <ul style="margin:0 0 6px 18px">
+        <li><strong>Sources</strong> = where nutrients come from in food.</li>
+        <li>Macronutrients: <strong>Carbs, Proteins, Fats, Water, Fiber</strong>.</li>
+        <li>Micronutrients: <strong>Vitamins & Minerals</strong>.</li>
+        <li>Digestion ensures nutrients are <strong>absorbed</strong> and <strong>used</strong> by the body.</li>
+      </ul>
+    </section>
+
+    <p class="muted" style="text-align:center; font-size:13px; margin-top:16px">Print on A4 (portrait). Want a full “Nutrient‑at‑a‑Glance” chart next (sources + functions + deficiency + excess + RDA)?</p>
+  </div>
+</body>
+</html>

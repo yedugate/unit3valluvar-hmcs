@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Back to Home (paste anywhere inside <body>) -->
+<a href="unit3index.html" class="u3-back" aria-label="Back to Unit 3 Home">
+  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15.5 19l-7-7 7-7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  <span>Home</span>
+</a>
+
+<style>
+  /* Unit 3 Back Button: scoped, unobtrusive */
+  .u3-back{
+    position: fixed; inset: 14px auto auto 14px;
+    display: inline-flex; align-items: center; gap: 8px;
+    padding: 10px 14px; border-radius: 999px;
+    text-decoration: none; font: 600 14px/1.1 system-ui,-apple-system,Segoe UI,Roboto,Arial;
+    color: #0f172a; background: #ffffff; border: 1px solid #e2e8f0;
+    box-shadow: 0 8px 24px rgba(2,6,23,.12); z-index: 9999;
+    transition: transform .12s ease, box-shadow .2s ease, border-color .2s ease;
+  }
+  .u3-back:hover{ transform: translateY(-1px); border-color:#cbd5e1; box-shadow: 0 12px 28px rgba(2,6,23,.16); }
+  .u3-back:active{ transform: translateY(0); }
+  .u3-back svg{ width: 18px; height: 18px }
+  /* Dark mode */
+  @media (prefers-color-scheme: dark){
+    .u3-back{ color:#e5eefc; background:#0f172a; border-color:#1f2937; box-shadow:none }
+    .u3-back:hover{ border-color:#334155 }
+  }
+  /* Respect in-page anchored headers */
+  @media (max-width:480px){ .u3-back{ padding: 9px 12px } }
+  /* Hide in print */
+  @media print{ .u3-back{ display:none !important } }
+</style>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Minerals – Protective Nutrients (Printable)</title>
+  <style>
+    :root{
+      --bg:#f7fafc; --card:#ffffff; --ink:#0f172a; --muted:#475569; --accent:#16a34a; --accent-2:#0ea5e9; --border:#e2e8f0; --shadow:0 6px 24px rgba(2,6,23,.08); --radius:16px;
+    }
+    *{box-sizing:border-box}
+    body{margin:0; color:var(--ink); background:var(--bg); font:16px/1.6 system-ui, -apple-system, Segoe UI, Roboto, Arial}
+    .wrap{max-width:1100px; margin:auto; padding:28px 16px}
+    .hero{background:linear-gradient(160deg,#ecfdf5,#eff6ff); border:1px solid var(--border); border-radius:var(--radius); padding:24px; box-shadow:var(--shadow)}
+    h1{margin:0 0 6px 0; font-size:clamp(28px,4vw,40px)}
+    .subtitle{margin:0; color:var(--muted)}
+    .card{background:var(--card); border:1px solid var(--border); border-radius:var(--radius); padding:18px 20px; box-shadow:var(--shadow)}
+    .lead{font-size:18px}
+    .grid{display:grid; gap:18px; grid-template-columns:repeat(12,1fr)}
+    .muted{color:var(--muted)}
+    .recap{background:#f0fdf4; border:1px solid #bbf7d0}
+    .tag{display:inline-block; padding:6px 10px; border-radius:999px; border:1px solid var(--border); background:#f8fafc; margin:4px 6px 0 0; font-size:14px}
+    /* Tables */
+    .table{width:100%; border-collapse:separate; border-spacing:0; overflow:hidden; border-radius:14px; border:1px solid var(--border); page-break-inside:auto}
+    .table thead th{background:#f1f5f9; color:#0b1220; text-align:left; font-weight:700; padding:10px 12px; border-bottom:1px solid var(--border)}
+    .table td{padding:10px 12px; vertical-align:top; border-bottom:1px solid var(--border)}
+    .table tr:last-child td{border-bottom:none}
+    .note{font-size:13px; color:var(--muted)}
+    .no-break{page-break-inside:avoid}
+    /* Print Styles */
+    @page { size: A4; margin: 14mm; }
+    @media print{
+      body{background:#fff}
+      .wrap{max-width:none; padding:0}
+      .hero, .card{box-shadow:none}
+      .hero{background:#fff}
+      .table thead th{background:#eaf0f8; -webkit-print-color-adjust:exact; print-color-adjust:exact}
+      a[href]:after{content:""}
+    }
+    @media (max-width: 840px){ .grid{grid-template-columns:1fr} }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <section class="hero no-break">
+      <h1>Minerals – <span style="color:var(--accent)">Protective Nutrients</span></h1>
+      <p class="subtitle">11th–12th grade • Definition & basics • Classification • Sources & functions • One absorption diagram • Printable</p>
+    </section>
+
+    <div style="height:14px"></div>
+
+    <!-- Definition & Biochemistry -->
+    <section class="card no-break" aria-label="Definition & Biochemistry">
+      <h2 style="margin-top:0">1) Definition & Biochemistry</h2>
+      <p class="lead">Minerals are <strong>inorganic elements</strong> (no carbon framework) required in small amounts for life.</p>
+      <ul style="margin:0 0 6px 18px">
+        <li>Form parts of <strong>bones, teeth, enzymes, hemoglobin, hormones, and body fluids</strong>.</li>
+        <li>Cannot be synthesized by the body → must be obtained from food.</li>
+      </ul>
+      <div>
+        <span class="tag">Inorganic</span>
+        <span class="tag">Enzymes & hormones</span>
+        <span class="tag">Bones & blood</span>
+      </div>
+    </section>
+
+    <div style="height:14px"></div>
+
+    <!-- Classification -->
+    <section class="card no-break" aria-label="Classification of Minerals">
+      <h2 style="margin-top:0">2) Classification of Minerals</h2>
+      <table class="table" aria-label="Mineral classification table">
+        <thead>
+          <tr>
+            <th>Group</th>
+            <th>Needed in…</th>
+            <th>Examples</th>
+            <th>Main Role (Simple)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Macrominerals</strong></td>
+            <td>&gt;100 mg/day</td>
+            <td>Calcium, Phosphorus, Sodium, Potassium, Magnesium</td>
+            <td>Bone structure, fluid balance, nerve signals</td>
+          </tr>
+          <tr>
+            <td><strong>Microminerals (Trace)</strong></td>
+            <td>&lt;100 mg/day</td>
+            <td>Iron, Iodine, Zinc, Copper, Fluoride, Selenium</td>
+            <td>Blood, thyroid, enzymes, immunity</td>
+          </tr>
+          <tr>
+            <td><strong>Ultratrace elements</strong></td>
+            <td>Very tiny (µg)</td>
+            <td>Chromium, Molybdenum, Cobalt</td>
+            <td>Specialized enzyme functions</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <div style="height:14px"></div>
+
+    <!-- Important Minerals at a Glance -->
+    <section class="card no-break" aria-label="Important Minerals at a Glance">
+      <h2 style="margin-top:0">3) Important Minerals at a Glance</h2>
+      <table class="table" aria-label="Important minerals table">
+        <thead>
+          <tr>
+            <th>Mineral</th><th>Sources</th><th>Functions</th><th>Deficiency</th><th>Excess</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td><strong>Calcium (Ca)</strong></td><td>Milk, ragi, greens</td><td>Bones, teeth, muscle contraction</td><td>Rickets, Osteoporosis</td><td>Kidney stones</td></tr>
+          <tr><td><strong>Phosphorus (P)</strong></td><td>Milk, fish, nuts, pulses</td><td>Bones, teeth, ATP energy</td><td>Weak bones, weakness</td><td>Bone resorption</td></tr>
+          <tr><td><strong>Iron (Fe)</strong></td><td>Liver, spinach, dates, jaggery</td><td>Hemoglobin (O<sub>2</sub> transport)</td><td>Anemia (tiredness, pale skin)</td><td>Hemochromatosis (iron overload)</td></tr>
+          <tr><td><strong>Iodine (I)</strong></td><td>Iodized salt, sea foods</td><td>Thyroid hormones</td><td>Goiter, cretinism</td><td>Thyroid problems</td></tr>
+          <tr><td><strong>Zinc (Zn)</strong></td><td>Nuts, legumes, meat, milk</td><td>Enzymes, wound healing, immunity</td><td>Growth retardation, poor healing</td><td>Nausea, copper deficiency</td></tr>
+          <tr><td><strong>Sodium (Na)</strong></td><td>Salt, cheese, bread</td><td>Fluid balance, nerve impulses</td><td>Low BP, cramps</td><td>High BP (hypertension)</td></tr>
+          <tr><td><strong>Potassium (K)</strong></td><td>Banana, pulses, vegetables</td><td>Muscle function, heart rhythm</td><td>Muscle weakness, irregular heartbeat</td><td>Heart arrhythmia</td></tr>
+          <tr><td><strong>Magnesium (Mg)</strong></td><td>Nuts, seeds, greens</td><td>Enzyme reactions, muscles</td><td>Tremors, cramps</td><td>Diarrhea (excess supplements)</td></tr>
+          <tr><td><strong>Fluoride (F)</strong></td><td>Drinking water, tea</td><td>Strong teeth, bone strength</td><td>Dental caries</td><td>Fluorosis (stained teeth, weak bones)</td></tr>
+        </tbody>
+      </table>
+      <p class="note">Note: Absorption can be influenced by vitamin status (e.g., vitamin C improves iron absorption) and inhibitors (phytates/oxalates may reduce some mineral absorption).</p>
+    </section>
+
+    <div style="height:14px"></div>
+
+    <!-- RDA -->
+    <section class="card no-break" aria-label="RDA (General Values for Adults)">
+      <h2 style="margin-top:0">4) RDA (General Values for Adults)</h2>
+      <div class="grid">
+        <div class="card" style="grid-column:span 6">
+          <ul style="margin:0 0 6px 18px">
+            <li><strong>Calcium</strong>: ~1000 mg/day</li>
+            <li><strong>Iron</strong>: ~17–21 mg/day</li>
+            <li><strong>Iodine</strong>: ~150 µg/day</li>
+          </ul>
+        </div>
+        <div class="card" style="grid-column:span 6">
+          <ul style="margin:0 0 6px 18px">
+            <li><strong>Zinc</strong>: ~10–12 mg/day</li>
+            <li><strong>Sodium</strong>: &lt;5 g salt/day (≈ 2 g Na)</li>
+            <li><strong>Potassium</strong>: ~3500 mg/day</li>
+          </ul>
+        </div>
+      </div>
+      <p class="note">Values are general adult references; needs vary by age, sex, and physiological state (pregnancy, lactation).</p>
+    </section>
+
+    <div style="height:14px"></div>
+
+    <!-- Absorption Diagram -->
+    <section class="card no-break" aria-label="Diagram – Absorption of Minerals (Simplified)">
+      <h2 style="margin-top:0">5) Diagram – Absorption of Minerals (Simplified)</h2>
+      <svg viewBox="0 0 980 520" width="100%" height="auto" aria-label="Mineral absorption flow">
+        <defs>
+          <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+            <path d="M0,0 L0,6 L9,3 z" fill="#16a34a" />
+          </marker>
+        </defs>
+        <!-- Food -->
+        <rect x="300" y="20" width="380" height="48" rx="12" ry="12" fill="#ffffff" stroke="#cbd5e1"/>
+        <text x="490" y="50" text-anchor="middle" font-family="system-ui,Segoe UI,Arial" font-size="16">FOOD (Milk, Fruits, Vegetables, Pulses, Salt)</text>
+        <line x1="490" y1="68" x2="490" y2="100" stroke="#16a34a" stroke-width="3" marker-end="url(#arrow)"/>
+
+        <!-- Stomach -->
+        <rect x="250" y="100" width="480" height="80" rx="12" ry="12" fill="#ffffff" stroke="#cbd5e1"/>
+        <text x="490" y="128" text-anchor="middle" font-family="system-ui,Segoe UI,Arial" font-size="16">[Stomach] – Minerals released from food</text>
+        <line x1="490" y1="180" x2="490" y2="212" stroke="#16a34a" stroke-width="3" marker-end="url(#arrow)"/>
+
+        <!-- Small Intestine -->
+        <rect x="120" y="212" width="740" height="140" rx="12" ry="12" fill="#ffffff" stroke="#cbd5e1"/>
+        <text x="490" y="240" text-anchor="middle" font-family="system-ui,Segoe UI,Arial" font-size="16">[Small Intestine] – Minerals absorbed</text>
+        <text x="490" y="264" text-anchor="middle" font-family="system-ui,Segoe UI,Arial" font-size="14" fill="#475569">Calcium, Iron, Magnesium → blood • Iodine, Sodium, Potassium → blood</text>
+        <line x1="490" y1="352" x2="490" y2="384" stroke="#16a34a" stroke-width="3" marker-end="url(#arrow)"/>
+
+        <!-- Blood Circulation -->
+        <rect x="210" y="384" width="560" height="80" rx="12" ry="12" fill="#ffffff" stroke="#cbd5e1"/>
+        <text x="490" y="412" text-anchor="middle" font-family="system-ui,Segoe UI,Arial" font-size="16">[Blood Circulation]</text>
+        <text x="490" y="434" text-anchor="middle" font-family="system-ui,Segoe UI,Arial" font-size="14" fill="#475569">Minerals carried to bones, teeth, muscles, enzymes</text>
+        <line x1="490" y1="464" x2="490" y2="496" stroke="#16a34a" stroke-width="3"/>
+
+        <!-- End result note -->
+        <text x="490" y="510" text-anchor="middle" font-family="system-ui,Segoe UI,Arial" font-size="13" fill="#334155">End result: Growth, energy metabolism, strong bones, hormones</text>
+      </svg>
+      <p class="muted" style="margin-top:8px">Simple flow: release in stomach → absorption in small intestine → transport via blood to target tissues.</p>
+    </section>
+
+    <div style="height:14px"></div>
+
+    <!-- Recap -->
+    <section class="card recap no-break" aria-label="Quick Recap for Students">
+      <h3 style="margin-top:0">✅ Quick Recap for Students</h3>
+      <ul style="margin:0 0 6px 18px">
+        <li>Minerals = <strong>inorganic</strong> nutrients needed in <strong>macro</strong> (&gt;100 mg/day) or <strong>micro</strong> (&lt;100 mg/day) amounts.</li>
+        <li>Major: <strong>Ca, P, Na, K, Mg</strong>; Trace: <strong>Fe, I, Zn, F, Cu, Se</strong>.</li>
+        <li>Vital roles: <strong>Bones, blood, enzymes, hormones, nerve impulses</strong>.</li>
+        <li>Deficiency → anemia, goiter, weak bones; Excess → toxicity (e.g., kidney stones, hypertension).</li>
+      </ul>
+    </section>
+
+    <p class="muted" style="text-align:center; font-size:13px; margin-top:16px">Print on A4 (portrait). Want me to create the Vitamins notes next (fat‑soluble vs water‑soluble, sources, functions, deficiency, diagram)?</p>
+  </div>
+</body>
+</html>

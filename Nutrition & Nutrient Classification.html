@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Back to Home (paste anywhere inside <body>) -->
+<a href="unit3index.html" class="u3-back" aria-label="Back to Unit 3 Home">
+  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15.5 19l-7-7 7-7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  <span>Home</span>
+</a>
+
+<style>
+  /* Unit 3 Back Button: scoped, unobtrusive */
+  .u3-back{
+    position: fixed; inset: 14px auto auto 14px;
+    display: inline-flex; align-items: center; gap: 8px;
+    padding: 10px 14px; border-radius: 999px;
+    text-decoration: none; font: 600 14px/1.1 system-ui,-apple-system,Segoe UI,Roboto,Arial;
+    color: #0f172a; background: #ffffff; border: 1px solid #e2e8f0;
+    box-shadow: 0 8px 24px rgba(2,6,23,.12); z-index: 9999;
+    transition: transform .12s ease, box-shadow .2s ease, border-color .2s ease;
+  }
+  .u3-back:hover{ transform: translateY(-1px); border-color:#cbd5e1; box-shadow: 0 12px 28px rgba(2,6,23,.16); }
+  .u3-back:active{ transform: translateY(0); }
+  .u3-back svg{ width: 18px; height: 18px }
+  /* Dark mode */
+  @media (prefers-color-scheme: dark){
+    .u3-back{ color:#e5eefc; background:#0f172a; border-color:#1f2937; box-shadow:none }
+    .u3-back:hover{ border-color:#334155 }
+  }
+  /* Respect in-page anchored headers */
+  @media (max-width:480px){ .u3-back{ padding: 9px 12px } }
+  /* Hide in print */
+  @media print{ .u3-back{ display:none !important } }
+</style>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Nutrition Classification – Autotrophic vs Heterotrophic</title>
+  <style>
+    :root{
+      --bg:#f7fafc; --card:#ffffff; --ink:#0f172a; --muted:#475569;
+      --accent:#16a34a; --accent-2:#0ea5e9; --border:#e2e8f0; --shadow:0 6px 24px rgba(2,6,23,.08);
+      --radius:16px;
+    }
+    *{box-sizing:border-box}
+    body{margin:0; font:16px/1.6 system-ui, -apple-system, Segoe UI, Roboto, 'Helvetica Neue', Arial;
+      color:var(--ink); background:var(--bg)}
+    .wrap{max-width:1100px; margin:auto; padding:32px 16px}
+    .hero{background:linear-gradient(160deg,#ecfdf5,#eff6ff); border:1px solid var(--border); border-radius:var(--radius); padding:28px; box-shadow:var(--shadow)}
+    h1{margin:0 0 6px 0; font-size:clamp(28px,4vw,40px)}
+    .subtitle{margin:0; color:var(--muted)}
+    .card{background:var(--card); border:1px solid var(--border); border-radius:var(--radius); padding:20px; box-shadow:var(--shadow)}
+    .grid{display:grid; gap:18px; grid-template-columns:repeat(12,1fr)}
+    .lead{font-size:18px}
+    ul.chev{list-style:none; padding:0; margin:0}
+    ul.chev li{margin:8px 0; padding-left:12px; position:relative}
+    ul.chev li::before{content:'›'; position:absolute; left:0; color:var(--accent); font-weight:800}
+    .table{width:100%; border-collapse:separate; border-spacing:0; overflow:hidden; border-radius:14px; border:1px solid var(--border)}
+    .table thead th{background:#f1f5f9; color:#0b1220; text-align:left; font-weight:700; padding:12px 14px; border-bottom:1px solid var(--border)}
+    .table td{padding:12px 14px; vertical-align:top; border-bottom:1px solid var(--border)}
+    .table tr:last-child td{border-bottom:none}
+    .tag{display:inline-block; padding:6px 10px; border-radius:999px; border:1px solid var(--border); background:#f8fafc; margin:4px 6px 0 0; font-size:14px}
+    .recap{background:#f0fdf4; border:1px solid #bbf7d0}
+    .muted{color:var(--muted)}
+    .center{display:grid; place-items:center}
+    @media (max-width: 840px){ .grid{grid-template-columns:1fr} }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <section class="hero">
+      <h1>Nutrition <span style="color:var(--accent)">Classification</span></h1>
+      <p class="subtitle">Student‑friendly notes (11th–12th): clear tables + a digestion‑linked diagram</p>
+    </section>
+
+    <div style="height:14px"></div>
+
+    <section class="card">
+      <p class="lead"><strong>Nutrition</strong> can be classified by <em>how organisms obtain food</em>: two main types → <strong>Autotrophic</strong> and <strong>Heterotrophic</strong>.</p>
+      <div>
+        <span class="tag">Autotrophs → make food</span>
+        <span class="tag">Heterotrophs → depend on others</span>
+      </div>
+    </section>
+
+    <div style="height:14px"></div>
+
+    <section class="grid">
+      <div class="card" style="grid-column:span 6">
+        <h2 style="margin-top:0">1) Autotrophic Nutrition</h2>
+        <ul class="chev">
+          <li>Organisms <strong>make their own food</strong> from simple raw materials.</li>
+          <li>Use <strong>CO₂, H₂O</strong> and <strong>energy</strong> (sunlight or chemical energy).</li>
+          <li>Examples: <strong>Green plants</strong> (photosynthesis), some bacteria (chemosynthesis).</li>
+        </ul>
+        <table class="table" aria-label="Autotrophic subtypes">
+          <thead><tr><th>Subtype</th><th>How Food is Produced</th><th>Examples</th></tr></thead>
+          <tbody>
+            <tr><td><strong>Photosynthesis</strong></td><td>Light energy + CO₂ + H₂O → glucose (food)</td><td>Green plants, algae</td></tr>
+            <tr><td><strong>Chemosynthesis</strong></td><td>Energy from chemical reactions → food</td><td>Nitrifying & sulfur bacteria</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="card" style="grid-column:span 6">
+        <h2 style="margin-top:0">2) Heterotrophic Nutrition</h2>
+        <ul class="chev">
+          <li>Organisms <strong>depend on others</strong> for ready‑made food.</li>
+          <li>They cannot synthesize food from raw materials.</li>
+        </ul>
+        <table class="table" aria-label="Heterotrophic types">
+          <thead><tr><th>Type</th><th>Meaning (Simplified)</th><th>Examples</th></tr></thead>
+          <tbody>
+            <tr><td><strong>Holozoic</strong></td><td>Take solid food → <em>ingestion → digestion → absorption</em></td><td>Humans, cow, lion</td></tr>
+            <tr><td><strong>Saprophytic</strong></td><td>Absorb nutrients from <em>dead & decaying</em> matter</td><td>Fungi, mushrooms</td></tr>
+            <tr><td><strong>Parasitic</strong></td><td>Live on/in a <em>host</em> and take its food</td><td>Tapeworm, lice, <em>Cuscuta</em></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <div style="height:14px"></div>
+
+    <section class="card">
+      <h2 style="margin-top:0">Summary Table — Classification of Nutrition</h2>
+      <table class="table" role="table" aria-label="Classification summary">
+        <thead>
+          <tr>
+            <th>Main Type</th><th>Sub‑type</th><th>How Food is Obtained</th><th>Examples</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td rowspan="2"><strong>Autotrophic</strong></td><td>Photosynthesis</td><td>Sunlight + CO₂ + H₂O → prepare food</td><td>Green plants, algae</td></tr>
+          <tr><td>Chemosynthesis</td><td>Chemical energy → prepare food</td><td>Nitrifying bacteria</td></tr>
+          <tr><td rowspan="3"><strong>Heterotrophic</strong></td><td>Holozoic</td><td><strong>Ingestion → Digestion → Absorption</strong> → Assimilation</td><td>Humans, dogs</td></tr>
+          <tr><td>Saprophytic</td><td>Absorb from dead organic matter</td><td>Fungi</td></tr>
+          <tr><td>Parasitic</td><td>Take food from host (harmful to host)</td><td>Tapeworm, mistletoe</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <div style="height:14px"></div>
+
+    <section class="card center">
+      <!-- SVG: Flow of Nutrition Types with digestion linkage under Holozoic -->
+      <svg viewBox="0 0 980 360" width="100%" height="auto" aria-label="Flow of Nutrition Types">
+        <defs>
+          <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+            <path d="M0,0 L0,6 L9,3 z" fill="#16a34a" />
+          </marker>
+        </defs>
+
+        <!-- Root: Nutrition -->
+        <rect x="400" y="20" width="180" height="50" rx="12" ry="12" fill="#ffffff" stroke="#cbd5e1"/>
+        <text x="490" y="50" text-anchor="middle" font-family="system-ui,Segoe UI,Arial" font-size="18">NUTRITION</text>
+
+        <!-- Branches: Autotrophic / Heterotrophic -->
+        <line x1="490" y1="70" x2="280" y2="120" stroke="#16a34a" stroke-width="3" marker-end="url(#arrow)"/>
+        <line x1="490" y1="70" x2="700" y2="120" stroke="#16a34a" stroke-width="3" marker-end="url(#arrow)"/>
+
+        <!-- Autotrophic box -->
+        <rect x="180" y="120" width="200" height="50" rx="12" ry="12" fill="#ffffff" stroke="#cbd5e1"/>
+        <text x="280" y="150" text-anchor="middle" font-family="system-ui,Segoe UI,Arial" font-size="16">AUTOTROPHIC</text>
+
+        <!-- Heterotrophic box -->
+        <rect x="680" y="120" width="220" height="50" rx="12" ry="12" fill="#ffffff" stroke="#cbd5e1"/>
+        <text x="790" y="150" text-anchor="middle" font-family="system-ui,Segoe UI,Arial" font-size="16">HETEROTROPHIC</text>
+
+        <!-- Autotrophic children -->
+        <line x1="280" y1="170" x2="220" y2="220" stroke="#16a34a" stroke-width="3" marker-end="url(#arrow)"/>
+        <line x1="280" y1="170" x2="340" y2="220" stroke="#16a34a" stroke-width="3" marker-end="url(#arrow)"/>
+
+        <rect x="140" y="220" width="160" height="46" rx="10" ry="10" fill="#ffffff" stroke="#cbd5e1"/>
+        <text x="220" y="248" text-anchor="middle" font-family="system-ui,Segoe UI,Arial" font-size="14">Photosynthetic</text>
+
+        <rect x="320" y="220" width="160" height="46" rx="10" ry="10" fill="#ffffff" stroke="#cbd5e1"/>
+        <text x="400" y="248" text-anchor="middle" font-family="system-ui,Segoe UI,Arial" font-size="14">Chemosynthetic</text>
+
+        <!-- Heterotrophic children -->
+        <line x1="790" y1="170" x2="710" y2="220" stroke="#16a34a" stroke-width="3" marker-end="url(#arrow)"/>
+        <line x1="790" y1="170" x2="790" y2="220" stroke="#16a34a" stroke-width="3" marker-end="url(#arrow)"/>
+        <line x1="790" y1="170" x2="870" y2="220" stroke="#16a34a" stroke-width="3" marker-end="url(#arrow)"/>
+
+        <rect x="630" y="220" width="160" height="46" rx="10" ry="10" fill="#ffffff" stroke="#cbd5e1"/>
+        <text x="710" y="248" text-anchor="middle" font-family="system-ui,Segoe UI,Arial" font-size="14">Holozoic</text>
+
+        <rect x="710" y="220" width="160" height="46" rx="10" ry="10" transform="translate(0,60)" fill="#ffffff" stroke="#cbd5e1"/>
+        <text x="790" y="308" text-anchor="middle" font-family="system-ui,Segoe UI,Arial" font-size="14">Saprophytic</text>
+
+        <rect x="850" y="220" width="160" height="46" rx="10" ry="10" fill="#ffffff" stroke="#cbd5e1"/>
+        <text x="930" y="248" text-anchor="middle" font-family="system-ui,Segoe UI,Arial" font-size="14">Parasitic</text>
+
+        <!-- Digestion link under Holozoic -->
+        <line x1="710" y1="266" x2="710" y2="300" stroke="#0ea5e9" stroke-width="3" marker-end="url(#arrow)"/>
+        <rect x="600" y="300" width="220" height="44" rx="10" ry="10" fill="#ffffff" stroke="#93c5fd"/>
+        <text x="710" y="327" text-anchor="middle" font-family="system-ui,Segoe UI,Arial" font-size="13" fill="#1e293b">Ingestion → Digestion → Absorption → Assimilation</text>
+      </svg>
+      <p class="muted" style="margin-top:8px">Simple Diagram – Flow of nutrition types (digestion steps apply to <strong>holozoic</strong> nutrition).</p>
+    </section>
+
+    <div style="height:14px"></div>
+
+    <section class="card recap">
+      <h3 style="margin-top:0">✅ Quick Recap</h3>
+      <ul class="chev" style="margin-bottom:0">
+        <li><strong>Autotrophs</strong> make food (photosynthesis or chemosynthesis).</li>
+        <li><strong>Heterotrophs</strong> depend on others: holozoic, saprophytic, parasitic.</li>
+      </ul>
+    </section>
+
+    <p class="muted" style="text-align:center; font-size:13px; margin-top:16px">Use with your UNIT‑III pack. Want a Tamil/dual‑language version or printable PDF?</p>
+  </div>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Nutrient Classification – 11th & 12th (Printable)</title>
+  <style>
+    :root{
+      --bg:#f7fafc; --card:#ffffff; --ink:#0f172a; --muted:#475569; --accent:#16a34a; --accent-2:#0ea5e9; --border:#e2e8f0; --shadow:0 6px 24px rgba(2,6,23,.08); --radius:16px;
+    }
+    *{box-sizing:border-box}
+    body{margin:0; color:var(--ink); background:var(--bg); font:16px/1.6 system-ui, -apple-system, Segoe UI, Roboto, Arial}
+    .wrap{max-width:1100px; margin:auto; padding:28px 16px}
+    .hero{background:linear-gradient(160deg,#ecfdf5,#eff6ff); border:1px solid var(--border); border-radius:var(--radius); padding:24px; box-shadow:var(--shadow)}
+    h1{margin:0 0 6px 0; font-size:clamp(28px,4vw,40px)}
+    .subtitle{margin:0; color:var(--muted)}
+    .card{background:var(--card); border:1px solid var(--border); border-radius:var(--radius); padding:18px 20px; box-shadow:var(--shadow)}
+    .lead{font-size:18px}
+    .grid{display:grid; gap:18px; grid-template-columns:repeat(12,1fr)}
+    .muted{color:var(--muted)}
+    .tag{display:inline-block; padding:6px 10px; border-radius:999px; border:1px solid var(--border); background:#f8fafc; margin:4px 6px 0 0; font-size:14px}
+    /* Tables */
+    .table{width:100%; border-collapse:separate; border-spacing:0; overflow:hidden; border-radius:14px; border:1px solid var(--border); page-break-inside:auto}
+    .table thead th{background:#f1f5f9; color:#0b1220; text-align:left; font-weight:700; padding:10px 12px; border-bottom:1px solid var(--border)}
+    .table td{padding:10px 12px; vertical-align:top; border-bottom:1px solid var(--border)}
+    .table tr:last-child td{border-bottom:none}
+    /* Recap */
+    .recap{background:#f0fdf4; border:1px solid #bbf7d0}
+    /* Print Styles */
+    @page { size: A4; margin: 14mm; }
+    @media print{
+      body{background:#fff}
+      .wrap{max-width:none; padding:0}
+      .hero, .card{box-shadow:none}
+      .hero{background:#fff}
+      .table thead th{background:#eaf0f8; -webkit-print-color-adjust:exact; print-color-adjust:exact}
+      a[href]:after{content:""}
+      .no-break{page-break-inside:avoid}
+    }
+    @media (max-width: 840px){ .grid{grid-template-columns:1fr} }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <section class="hero no-break">
+      <h1>Nutrient <span style="color:var(--accent)">Classification</span></h1>
+      <p class="subtitle">11th–12th grade • Student‑friendly tables • One digestion/absorption diagram • Printable</p>
+    </section>
+
+    <div style="height:14px"></div>
+
+    <section class="card no-break">
+      <p class="lead"><strong>Nutrients</strong> are chemical substances in food required for <strong>energy, growth, repair, and regulation</strong>. They are grouped into <strong>Macronutrients</strong> and <strong>Micronutrients</strong>.</p>
+    </section>
+
+    <div style="height:14px"></div>
+
+    <section class="card no-break">
+      <h2 style="margin-top:0">1) Main Classification of Nutrients</h2>
+      <table class="table" role="table" aria-label="Main classification">
+        <thead>
+          <tr>
+            <th>Category</th>
+            <th>Nutrients Included</th>
+            <th>Needed in…</th>
+            <th>Function (Simple)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Macronutrients</strong></td>
+            <td>Carbohydrates, Proteins, Fats, Water, Fiber</td>
+            <td>Large amounts (grams/day)</td>
+            <td>Give energy & build the body</td>
+          </tr>
+          <tr>
+            <td><strong>Micronutrients</strong></td>
+            <td>Vitamins, Minerals</td>
+            <td>Small amounts (mg or µg/day)</td>
+            <td>Regulate body functions, keep us healthy</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <div style="height:14px"></div>
+
+    <section class="grid">
+      <div class="card" style="grid-column:span 12">
+        <h2 style="margin-top:0">2) Macronutrients – “Energy & Building”</h2>
+        <table class="table" aria-label="Macronutrients">
+          <thead>
+            <tr>
+              <th>Nutrient</th>
+              <th>Sources</th>
+              <th>Main Role</th>
+              <th>Deficiency</th>
+              <th>Excess</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Carbohydrates</strong></td>
+              <td>Rice, wheat, potato, fruits</td>
+              <td>Quick energy</td>
+              <td>Fatigue, weakness</td>
+              <td>Obesity, diabetes</td>
+            </tr>
+            <tr>
+              <td><strong>Proteins</strong></td>
+              <td>Pulses, milk, eggs, fish</td>
+              <td>Body‑building, repair</td>
+              <td>Kwashiorkor, Marasmus</td>
+              <td>Kidney burden</td>
+            </tr>
+            <tr>
+              <td><strong>Fats</strong></td>
+              <td>Oils, ghee, nuts, fish</td>
+              <td>Energy store, insulation, vitamin absorption</td>
+              <td>Poor growth, dry skin</td>
+              <td>Heart disease, obesity</td>
+            </tr>
+            <tr>
+              <td><strong>Water</strong></td>
+              <td>Drinking water, fruits, vegetables</td>
+              <td>Solvent, transport, temperature control</td>
+              <td>Dehydration</td>
+              <td>Water intoxication</td>
+            </tr>
+            <tr>
+              <td><strong>Fiber</strong></td>
+              <td>Whole grains, vegetables, fruits</td>
+              <td>Adds bulk, prevents constipation</td>
+              <td>Constipation</td>
+              <td>Bloating, mineral loss</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <div style="height:14px"></div>
+
+    <section class="grid">
+      <div class="card" style="grid-column:span 12">
+        <h2 style="margin-top:0">3) Micronutrients – “Regulation & Protection”</h2>
+        <table class="table" aria-label="Micronutrients">
+          <thead>
+            <tr>
+              <th>Nutrient</th>
+              <th>Sources</th>
+              <th>Main Role</th>
+              <th>Deficiency Disease</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Vitamin A</strong></td>
+              <td>Carrot, papaya, fish oil</td>
+              <td>Good vision, skin health</td>
+              <td>Night blindness</td>
+            </tr>
+            <tr>
+              <td><strong>Vitamin D</strong></td>
+              <td>Sunlight, milk, fish</td>
+              <td>Bone health</td>
+              <td>Rickets, Osteomalacia</td>
+            </tr>
+            <tr>
+              <td><strong>Vitamin C</strong></td>
+              <td>Citrus fruits, amla</td>
+              <td>Healing, immunity</td>
+              <td>Scurvy</td>
+            </tr>
+            <tr>
+              <td><strong>Vitamin B‑complex</strong></td>
+              <td>Cereals, pulses, eggs</td>
+              <td>Energy metabolism, nerves</td>
+              <td>Beri‑beri, Pellagra</td>
+            </tr>
+            <tr>
+              <td><strong>Calcium</strong></td>
+              <td>Milk, ragi, greens</td>
+              <td>Bones, teeth</td>
+              <td>Rickets, Osteoporosis</td>
+            </tr>
+            <tr>
+              <td><strong>Iron</strong></td>
+              <td>Liver, spinach, dates</td>
+              <td>Hemoglobin (blood)</td>
+              <td>Anemia</td>
+            </tr>
+            <tr>
+              <td><strong>Iodine</strong></td>
+              <td>Iodized salt, sea foods</td>
+              <td>Thyroid function</td>
+              <td>Goiter</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <div style="height:14px"></div>
+
+    <section class="card no-break" aria-label="Diagram – Nutrient Classification & Digestion Link">
+      <h2 style="margin-top:0">4) Diagram – Nutrient Classification (with Digestion Link)</h2>
+      <!-- Single SVG that shows classification and a digestion/absorption ribbon (one diagram as requested) -->
+      <svg viewBox="0 0 980 420" width="100%" height="auto" aria-label="Nutrient Classification Diagram">
+        <defs>
+          <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+            <path d="M0,0 L0,6 L9,3 z" fill="#16a34a" />
+          </marker>
+        </defs>
+        <!-- Root: Nutrients -->
+        <rect x="420" y="20" width="160" height="44" rx="12" ry="12" fill="#ffffff" stroke="#cbd5e1"/>
+        <text x="500" y="47" text-anchor="middle" font-family="system-ui,Segoe UI,Arial" font-size="18">NUTRIENTS</text>
+        <!-- Branches -->
+        <line x1="500" y1="64" x2="290" y2="120" stroke="#16a34a" stroke-width="3" marker-end="url(#arrow)"/>
+        <line x1="500" y1="64" x2="710" y2="120" stroke="#16a34a" stroke-width="3" marker-end="url(#arrow)"/>
+        <rect x="220" y="120" width="180" height="44" rx="12" ry="12" fill="#ffffff" stroke="#cbd5e1"/>
+        <text x="310" y="147" text-anchor="middle" font-family="system-ui,Segoe UI,Arial" font-size="16">MACRONUTRIENTS</text>
+        <rect x="640" y="120" width="180" height="44" rx="12" ry="12" fill="#ffffff" stroke="#cbd5e1"/>
+        <text x="730" y="147" text-anchor="middle" font-family="system-ui,Segoe UI,Arial" font-size="16">MICRONUTRIENTS</text>
+        <!-- Macro children -->
+        <line x1="310" y1="164" x2="200" y2="220" stroke="#16a34a" stroke-width="3" marker-end="url(#arrow)"/>
+        <line x1="310" y1="164" x2="270" y2="220" stroke="#16a34a" stroke-width="3" marker-end="url(#arrow)"/>
+        <line x1="310" y1="164" x2="340" y2="220" stroke="#16a34a" stroke-width="3" marker-end="url(#arrow)"/>
+        <line x1="310" y1="164" x2="410" y2="220" stroke="#16a34a" stroke-width="3" marker-end="url(#arrow)"/>
+        <line x1="310" y1="164" x2="480" y2="220" stroke="#16a34a" stroke-width="3" marker-end="url(#arrow)"/>
+        <g font-family="system-ui,Segoe UI,Arial" font-size="13">
+          <rect x="150" y="220" width="100" height="38" rx="10" ry="10" fill="#ffffff" stroke="#cbd5e1"/>
+          <text x="200" y="244" text-anchor="middle">Carbs</text>
+          <rect x="230" y="220" width="100" height="38" rx="10" ry="10" fill="#ffffff" stroke="#cbd5e1"/>
+          <text x="280" y="244" text-anchor="middle">Proteins</text>
+          <rect x="300" y="220" width="100" height="38" rx="10" ry="10" fill="#ffffff" stroke="#cbd5e1"/>
+          <text x="350" y="244" text-anchor="middle">Fats</text>
+          <rect x="380" y="220" width="100" height="38" rx="10" ry="10" fill="#ffffff" stroke="#cbd5e1"/>
+          <text x="430" y="244" text-anchor="middle">Water</text>
+          <rect x="450" y="220" width="100" height="38" rx="10" ry="10" fill="#ffffff" stroke="#cbd5e1"/>
+          <text x="500" y="244" text-anchor="middle">Fiber</text>
+        </g>
+        <!-- Micro children -->
+        <line x1="730" y1="164" x2="660" y2="220" stroke="#16a34a" stroke-width="3" marker-end="url(#arrow)"/>
+        <line x1="730" y1="164" x2="800" y2="220" stroke="#16a34a" stroke-width="3" marker-end="url(#arrow)"/>
+        <g font-family="system-ui,Segoe UI,Arial" font-size="13">
+          <rect x="610" y="220" width="120" height="38" rx="10" ry="10" fill="#ffffff" stroke="#cbd5e1"/>
+          <text x="670" y="244" text-anchor="middle">Vitamins</text>
+          <rect x="780" y="220" width="120" height="38" rx="10" ry="10" fill="#ffffff" stroke="#cbd5e1"/>
+          <text x="840" y="244" text-anchor="middle">Minerals</text>
+        </g>
+        <!-- Digestion/Absorption ribbon (single diagram integration) -->
+        <rect x="150" y="320" width="760" height="56" rx="14" ry="14" fill="#eff6ff" stroke="#93c5fd"/>
+        <text x="530" y="340" text-anchor="middle" font-family="system-ui,Segoe UI,Arial" font-size="14" fill="#1e293b">Ingestion → Digestion → Absorption → Assimilation</text>
+        <text x="530" y="360" text-anchor="middle" font-family="system-ui,Segoe UI,Arial" font-size="12" fill="#64748b">(Macronutrients supply energy/building blocks; micronutrients help regulate these processes)</text>
+      </svg>
+      <p class="muted" style="margin-top:8px">One combined diagram: classification of nutrients with a digestion/absorption ribbon.</p>
+    </section>
+
+    <div style="height:14px"></div>
+
+    <section class="card recap no-break">
+      <h3 style="margin-top:0">✅ Quick Recap for Students</h3>
+      <ul style="margin:0 0 6px 18px">
+        <li><strong>Macronutrients</strong> → needed in <em>large amounts</em> → provide <strong>energy & building blocks</strong>.</li>
+        <li><strong>Micronutrients</strong> → needed in <em>small amounts</em> → help in <strong>regulation & protection</strong>.</li>
+        <li>A <strong>balanced diet</strong> includes both types.</li>
+      </ul>
+    </section>
+
+    <p class="muted" style="text-align:center; font-size:13px; margin-top:16px">Tip: Print on A4 (portrait). Backgrounds are print‑safe. Need a Tamil/dual‑language version or a single “at‑a‑glance” mega‑table?</p>
+  </div>
+</body>
+</html>

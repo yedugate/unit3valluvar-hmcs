@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Back to Home (paste anywhere inside <body>) -->
+<a href="unit3index.html" class="u3-back" aria-label="Back to Unit 3 Home">
+  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15.5 19l-7-7 7-7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  <span>Home</span>
+</a>
+
+<style>
+  /* Unit 3 Back Button: scoped, unobtrusive */
+  .u3-back{
+    position: fixed; inset: 14px auto auto 14px;
+    display: inline-flex; align-items: center; gap: 8px;
+    padding: 10px 14px; border-radius: 999px;
+    text-decoration: none; font: 600 14px/1.1 system-ui,-apple-system,Segoe UI,Roboto,Arial;
+    color: #0f172a; background: #ffffff; border: 1px solid #e2e8f0;
+    box-shadow: 0 8px 24px rgba(2,6,23,.12); z-index: 9999;
+    transition: transform .12s ease, box-shadow .2s ease, border-color .2s ease;
+  }
+  .u3-back:hover{ transform: translateY(-1px); border-color:#cbd5e1; box-shadow: 0 12px 28px rgba(2,6,23,.16); }
+  .u3-back:active{ transform: translateY(0); }
+  .u3-back svg{ width: 18px; height: 18px }
+  /* Dark mode */
+  @media (prefers-color-scheme: dark){
+    .u3-back{ color:#e5eefc; background:#0f172a; border-color:#1f2937; box-shadow:none }
+    .u3-back:hover{ border-color:#334155 }
+  }
+  /* Respect in-page anchored headers */
+  @media (max-width:480px){ .u3-back{ padding: 9px 12px } }
+  /* Hide in print */
+  @media print{ .u3-back{ display:none !important } }
+</style>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Carbohydrates – Energy Givers (Printable)</title>
+  <style>
+    :root{
+      --bg:#f7fafc; --card:#ffffff; --ink:#0f172a; --muted:#475569; --accent:#16a34a; --accent-2:#0ea5e9; --border:#e2e8f0; --shadow:0 6px 24px rgba(2,6,23,.08); --radius:16px;
+    }
+    *{box-sizing:border-box}
+    body{margin:0; color:var(--ink); background:var(--bg); font:16px/1.6 system-ui, -apple-system, Segoe UI, Roboto, Arial}
+    .wrap{max-width:1100px; margin:auto; padding:28px 16px}
+    .hero{background:linear-gradient(160deg,#ecfdf5,#eff6ff); border:1px solid var(--border); border-radius:var(--radius); padding:24px; box-shadow:var(--shadow)}
+    h1{margin:0 0 6px 0; font-size:clamp(28px,4vw,40px)}
+    .subtitle{margin:0; color:var(--muted)}
+    .card{background:var(--card); border:1px solid var(--border); border-radius:var(--radius); padding:18px 20px; box-shadow:var(--shadow)}
+    .lead{font-size:18px}
+    .grid{display:grid; gap:18px; grid-template-columns:repeat(12,1fr)}
+    .muted{color:var(--muted)}
+    .recap{background:#f0fdf4; border:1px solid #bbf7d0}
+    .tag{display:inline-block; padding:6px 10px; border-radius:999px; border:1px solid var(--border); background:#f8fafc; margin:4px 6px 0 0; font-size:14px}
+    /* Tables */
+    .table{width:100%; border-collapse:separate; border-spacing:0; overflow:hidden; border-radius:14px; border:1px solid var(--border); page-break-inside:auto}
+    .table thead th{background:#f1f5f9; color:#0b1220; text-align:left; font-weight:700; padding:10px 12px; border-bottom:1px solid var(--border)}
+    .table td{padding:10px 12px; vertical-align:top; border-bottom:1px solid var(--border)}
+    .table tr:last-child td{border-bottom:none}
+    .note{font-size:13px; color:var(--muted)}
+    .no-break{page-break-inside:avoid}
+    /* Print Styles */
+    @page { size: A4; margin: 14mm; }
+    @media print{
+      body{background:#fff}
+      .wrap{max-width:none; padding:0}
+      .hero, .card{box-shadow:none}
+      .hero{background:#fff}
+      .table thead th{background:#eaf0f8; -webkit-print-color-adjust:exact; print-color-adjust:exact}
+      a[href]:after{content:""}
+    }
+    @media (max-width: 840px){ .grid{grid-template-columns:1fr} }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <section class="hero no-break">
+      <h1>Carbohydrates – <span style="color:var(--accent)">Energy Givers</span></h1>
+      <p class="subtitle">11th–12th grade • Biochemical classification • Student‑friendly tables • One digestion diagram • Printable</p>
+    </section>
+
+    <div style="height:14px"></div>
+
+    <section class="card no-break" aria-label="Definition">
+      <h2 style="margin-top:0">Definition</h2>
+      <p class="lead">Carbohydrates are <strong>organic compounds</strong> made of C, H, and O in the ratio <strong>(CH<sub>2</sub>O)<sub>n</sub></strong>. They are the <strong>main energy source</strong> of our body (~<strong>4 kcal/g</strong>).</p>
+      <div>
+        <span class="tag">Energy</span>
+        <span class="tag">Protein‑sparing</span>
+        <span class="tag">Fat metabolism</span>
+      </div>
+    </section>
+
+    <div style="height:14px"></div>
+
+    <section class="card no-break" aria-label="Biochemical classification">
+      <h2 style="margin-top:0">1) Biochemical Classification of Carbohydrates</h2>
+      <table class="table" aria-label="Biochemical classification table">
+        <thead>
+          <tr>
+            <th>Type</th>
+            <th>Composition</th>
+            <th>Examples</th>
+            <th>Notes (Simple)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Monosaccharides</strong> (single sugar)</td>
+            <td>One sugar unit</td>
+            <td>Glucose (grape sugar), Fructose (fruit sugar), Galactose</td>
+            <td>Quickest source of energy</td>
+          </tr>
+          <tr>
+            <td><strong>Disaccharides</strong> (two sugars)</td>
+            <td>Two monosaccharides</td>
+            <td>Sucrose (cane), Lactose (milk), Maltose (malt)</td>
+            <td>Easily digested</td>
+          </tr>
+          <tr>
+            <td><strong>Polysaccharides</strong> (many sugars)</td>
+            <td>Long chains of monosaccharides</td>
+            <td>Starch (plants), Glycogen (animals), Cellulose (plants)</td>
+            <td>Stored energy, dietary fiber</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <div style="height:14px"></div>
+
+    <section class="grid">
+      <div class="card no-break" style="grid-column:span 6" aria-label="Sources">
+        <h2 style="margin-top:0">2) Sources of Carbohydrates</h2>
+        <table class="table" aria-label="Sources table">
+          <thead><tr><th>Category</th><th>Examples</th></tr></thead>
+          <tbody>
+            <tr><td><strong>Cereals</strong></td><td>Rice, wheat, maize, barley</td></tr>
+            <tr><td><strong>Roots & Tubers</strong></td><td>Potato, tapioca, yam</td></tr>
+            <tr><td><strong>Fruits</strong></td><td>Banana, mango, grapes</td></tr>
+            <tr><td><strong>Sugars</strong></td><td>Cane sugar, honey</td></tr>
+            <tr><td><strong>Others</strong></td><td>Milk (lactose)</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="card no-break" style="grid-column:span 6" aria-label="Functions">
+        <h2 style="margin-top:0">3) Functions of Carbohydrates</h2>
+        <table class="table" aria-label="Functions table">
+          <thead><tr><th>Function</th><th>Explanation (Simple)</th></tr></thead>
+          <tbody>
+            <tr><td><strong>Energy</strong></td><td>Main source of energy (~4 kcal/g)</td></tr>
+            <tr><td><strong>Protein sparing</strong></td><td>Saves proteins from being used for energy</td></tr>
+            <tr><td><strong>Fat metabolism</strong></td><td>Needed to burn fat properly (avoid ketosis)</td></tr>
+            <tr><td><strong>Storage</strong></td><td>Stored as <em>glycogen</em> in liver & muscles</td></tr>
+            <tr><td><strong>Fiber</strong></td><td>Cellulose adds bulk → prevents constipation</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <div style="height:14px"></div>
+
+    <section class="card no-break" aria-label="Health aspects">
+      <h2 style="margin-top:0">4) Health Aspects</h2>
+      <table class="table" aria-label="Health aspects table">
+        <thead><tr><th>Condition</th><th>Effect</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Deficiency</strong></td><td>Weakness, fatigue, ketosis</td></tr>
+          <tr><td><strong>Excess</strong></td><td>Obesity, diabetes, dental caries</td></tr>
+          <tr><td><strong>RDA</strong></td><td><em>55–65%</em> of daily calories (~250–350 g/day for adults)</td></tr>
+        </tbody>
+      </table>
+      <p class="note">Choose whole grains & fruits; limit refined sugar and sweetened drinks.</p>
+    </section>
+
+    <div style="height:14px"></div>
+
+    <!-- Diagram: Digestion of Carbohydrates -->
+    <section class="card no-break" aria-label="Diagram – Digestion of Carbohydrates">
+      <h2 style="margin-top:0">5) Diagram – Digestion of Carbohydrates</h2>
+      <svg viewBox="0 0 980 520" width="100%" height="auto" aria-label="Carbohydrate digestion flow">
+        <defs>
+          <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+            <path d="M0,0 L0,6 L9,3 z" fill="#16a34a" />
+          </marker>
+        </defs>
+        <!-- Food -->
+        <rect x="330" y="20" width="320" height="48" rx="12" ry="12" fill="#ffffff" stroke="#cbd5e1"/>
+        <text x="490" y="50" text-anchor="middle" font-family="system-ui,Segoe UI,Arial" font-size="16">FOOD (Rice, Bread, Potato, Fruits)</text>
+        <line x1="490" y1="68" x2="490" y2="100" stroke="#16a34a" stroke-width="3" marker-end="url(#arrow)"/>
+
+        <!-- Mouth -->
+        <rect x="260" y="100" width="460" height="66" rx="12" ry="12" fill="#ffffff" stroke="#cbd5e1"/>
+        <text x="490" y="128" text-anchor="middle" font-family="system-ui,Segoe UI,Arial" font-size="16">[Mouth] – Salivary amylase: Starch → Maltose</text>
+        <line x1="490" y1="166" x2="490" y2="198" stroke="#16a34a" stroke-width="3" marker-end="url(#arrow)"/>
+
+        <!-- Stomach -->
+        <rect x="260" y="198" width="460" height="66" rx="12" ry="12" fill="#ffffff" stroke="#cbd5e1"/>
+        <text x="490" y="226" text-anchor="middle" font-family="system-ui,Segoe UI,Arial" font-size="16">[Stomach] – No carbohydrate digestion (acidic medium)</text>
+        <line x1="490" y1="264" x2="490" y2="296" stroke="#16a34a" stroke-width="3" marker-end="url(#arrow)"/>
+
+        <!-- Small Intestine -->
+        <rect x="120" y="296" width="740" height="92" rx="12" ry="12" fill="#ffffff" stroke="#cbd5e1"/>
+        <text x="490" y="325" text-anchor="middle" font-family="system-ui,Segoe UI,Arial" font-size="16">[Small Intestine]</text>
+        <text x="490" y="347" text-anchor="middle" font-family="system-ui,Segoe UI,Arial" font-size="14" fill="#475569">Pancreatic amylase: Starch → Maltose • Maltase/Sucrase/Lactase → Glucose, Fructose, Galactose</text>
+        <line x1="490" y1="388" x2="490" y2="420" stroke="#16a34a" stroke-width="3" marker-end="url(#arrow)"/>
+
+        <!-- Absorption -->
+        <rect x="250" y="420" width="480" height="66" rx="12" ry="12" fill="#ffffff" stroke="#cbd5e1"/>
+        <text x="490" y="448" text-anchor="middle" font-family="system-ui,Segoe UI,Arial" font-size="16">[Absorption] – Glucose, Fructose, Galactose enter blood (villi)</text>
+        <line x1="490" y1="486" x2="490" y2="508" stroke="#16a34a" stroke-width="3"/>
+
+        <!-- End result note -->
+        <text x="490" y="515" text-anchor="middle" font-family="system-ui,Segoe UI,Arial" font-size="13" fill="#334155">End result: Energy (ATP), Glycogen storage, Fat conversion (if excess)</text>
+      </svg>
+      <p class="muted" style="margin-top:8px">One diagram: from food intake to monosaccharide absorption and outcomes.</p>
+    </section>
+
+    <div style="height:14px"></div>
+
+    <section class="card recap no-break" aria-label="Quick recap">
+      <h3 style="margin-top:0">Quick Recap for Students</h3>
+      <ul style="margin:0 0 6px 18px">
+        <li>Carbohydrates = <strong>main fuel of life</strong> (~4 kcal/g).</li>
+        <li>Classes: <strong>Monosaccharides, Disaccharides, Polysaccharides</strong>.</li>
+        <li>Sources: cereals, roots/tubers, fruits, sugars, milk.</li>
+        <li>Functions: energy, protein‑sparing, fat metabolism, fiber for gut health.</li>
+        <li>Health: deficiency → fatigue; excess → obesity, diabetes.</li>
+      </ul>
+    </section>
+
+    <p class="muted" style="text-align:center; font-size:13px; margin-top:16px">Print on A4 (portrait). Want Tamil side‑by‑side or move to Proteins next?</p>
+  </div>
+</body>
+</html>

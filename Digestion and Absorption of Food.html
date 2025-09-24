@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Back to Home (paste anywhere inside <body>) -->
+<a href="unit3index.html" class="u3-back" aria-label="Back to Unit 3 Home">
+  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15.5 19l-7-7 7-7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  <span>Home</span>
+</a>
+
+<style>
+  /* Unit 3 Back Button: scoped, unobtrusive */
+  .u3-back{
+    position: fixed; inset: 14px auto auto 14px;
+    display: inline-flex; align-items: center; gap: 8px;
+    padding: 10px 14px; border-radius: 999px;
+    text-decoration: none; font: 600 14px/1.1 system-ui,-apple-system,Segoe UI,Roboto,Arial;
+    color: #0f172a; background: #ffffff; border: 1px solid #e2e8f0;
+    box-shadow: 0 8px 24px rgba(2,6,23,.12); z-index: 9999;
+    transition: transform .12s ease, box-shadow .2s ease, border-color .2s ease;
+  }
+  .u3-back:hover{ transform: translateY(-1px); border-color:#cbd5e1; box-shadow: 0 12px 28px rgba(2,6,23,.16); }
+  .u3-back:active{ transform: translateY(0); }
+  .u3-back svg{ width: 18px; height: 18px }
+  /* Dark mode */
+  @media (prefers-color-scheme: dark){
+    .u3-back{ color:#e5eefc; background:#0f172a; border-color:#1f2937; box-shadow:none }
+    .u3-back:hover{ border-color:#334155 }
+  }
+  /* Respect in-page anchored headers */
+  @media (max-width:480px){ .u3-back{ padding: 9px 12px } }
+  /* Hide in print */
+  @media print{ .u3-back{ display:none !important } }
+</style>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Digestion and Absorption of Food (Printable)</title>
+  <style>
+    :root{
+      --bg:#f7fafc; --card:#ffffff; --ink:#0f172a; --muted:#475569; --accent:#16a34a; --accent-2:#0ea5e9; --border:#e2e8f0; --shadow:0 6px 24px rgba(2,6,23,.08); --radius:16px;
+    }
+    *{box-sizing:border-box}
+    body{margin:0; color:var(--ink); background:var(--bg); font:16px/1.6 system-ui, -apple-system, Segoe UI, Roboto, Arial}
+    .wrap{max-width:1200px; margin:auto; padding:28px 16px}
+    .hero{background:linear-gradient(160deg,#ecfdf5,#eff6ff); border:1px solid var(--border); border-radius:var(--radius); padding:24px; box-shadow:var(--shadow)}
+    h1{margin:0 0 6px 0; font-size:clamp(28px,4vw,40px)}
+    .subtitle{margin:0; color:var(--muted)}
+    .card{background:var(--card); border:1px solid var(--border); border-radius:var(--radius); padding:18px 20px; box-shadow:var(--shadow)}
+    .lead{font-size:18px}
+    .muted{color:var(--muted)}
+    .recap{background:#f0fdf4; border:1px solid #bbf7d0}
+    .tag{display:inline-block; padding:6px 10px; border-radius:999px; border:1px solid var(--border); background:#f8fafc; margin:4px 6px 0 0; font-size:14px}
+    /* Tables */
+    .table{width:100%; border-collapse:separate; border-spacing:0; overflow:hidden; border-radius:14px; border:1px solid var(--border); page-break-inside:auto}
+    .table thead th{background:#f1f5f9; color:#0b1220; text-align:left; font-weight:700; padding:10px 12px; border-bottom:1px solid var(--border)}
+    .table td{padding:10px 12px; vertical-align:top; border-bottom:1px solid var(--border)}
+    .table tr:last-child td{border-bottom:none}
+    .note{font-size:13px; color:var(--muted)}
+    .no-break{page-break-inside:avoid}
+    /* Print Styles */
+    @page { size: A4; margin: 12mm; }
+    @media print{
+      body{background:#fff}
+      .wrap{max-width:none; padding:0}
+      .hero, .card{box-shadow:none}
+      .hero{background:#fff}
+      .table thead th{background:#eaf0f8; -webkit-print-color-adjust:exact; print-color-adjust:exact}
+      a[href]:after{content:""}
+      svg text{fill:#000}
+    }
+    @media (max-width: 840px){ .table td, .table th{font-size:14px} }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <section class="hero no-break">
+      <h1>Digestion and Absorption of Food</h1>
+      <p class="subtitle">11th–12th grade • Step-by-step process • Clear enzyme tables • Simple terms • One flow diagram • Printable</p>
+    </section>
+
+    <div style="height:14px"></div>
+
+    <!-- What is Digestion? -->
+    <section class="card no-break" aria-label="What is Digestion?">
+      <h2 style="margin-top:0">1) What is Digestion?</h2>
+      <p class="lead"><strong>Digestion</strong> is the process of <strong>breaking down complex food</strong> (carbohydrates, proteins, fats) into <strong>simple absorbable forms</strong>.</p>
+      <ul style="margin:0 0 6px 18px">
+        <li>Carbohydrates → <strong>Glucose</strong></li>
+        <li>Proteins → <strong>Amino acids</strong></li>
+        <li>Fats → <strong>Fatty acids + Glycerol</strong></li>
+      </ul>
+    </section>
+
+    <div style="height:14px"></div>
+
+    <!-- What is Absorption? -->
+    <section class="card no-break" aria-label="What is Absorption?">
+      <h2 style="margin-top:0">2) What is Absorption?</h2>
+      <p class="lead"><strong>Absorption</strong> is the process by which <strong>digested nutrients pass into the blood or lymph</strong> through the walls of the <strong>small intestine (villi)</strong>.</p>
+    </section>
+
+    <div style="height:14px"></div>
+
+    <!-- Steps of Digestion Table -->
+    <section class="card no-break" aria-label="Steps of Digestion in Humans">
+      <h2 style="margin-top:0">3) Steps of Digestion in Humans</h2>
+      <table class="table" aria-label="Steps of digestion table">
+        <thead>
+          <tr>
+            <th>Organ</th>
+            <th>Secretions</th>
+            <th>Enzymes</th>
+            <th>Food Digested</th>
+            <th>End Products</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Mouth</strong></td>
+            <td>Saliva</td>
+            <td>Salivary amylase</td>
+            <td>Starch → Maltose</td>
+            <td>Maltose</td>
+          </tr>
+          <tr>
+            <td><strong>Stomach</strong></td>
+            <td>Gastric juice (HCl, pepsin, gastric lipase)</td>
+            <td>Pepsin</td>
+            <td>Proteins → Peptides</td>
+            <td>Peptones</td>
+          </tr>
+          <tr>
+            <td><strong>Small Intestine (Duodenum)</strong></td>
+            <td>Bile (liver), Pancreatic juice (pancreas)</td>
+            <td>Lipase, Amylase, Trypsin, Chymotrypsin</td>
+            <td>Fats → Fatty acids + glycerol; Starch → Maltose; Proteins → Peptides</td>
+            <td>Simple sugars, peptides</td>
+          </tr>
+          <tr>
+            <td><strong>Small Intestine (Ileum)</strong></td>
+            <td>Intestinal juice</td>
+            <td>Maltase, Sucrase, Lactase, Peptidases</td>
+            <td>Maltose → Glucose; Sucrose → Glucose + Fructose; Lactose → Glucose + Galactose; Peptides → Amino acids</td>
+            <td>Monosaccharides, Amino acids</td>
+          </tr>
+          <tr>
+            <td><strong>Large Intestine</strong></td>
+            <td>No enzymes</td>
+            <td>–</td>
+            <td>Water, minerals, vitamins absorbed</td>
+            <td>Waste formed (feces)</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <div style="height:14px"></div>
+
+    <!-- Absorption Table -->
+    <section class="card no-break" aria-label="Absorption of Nutrients (Simplified)">
+      <h2 style="margin-top:0">4) Absorption of Nutrients (Simplified)</h2>
+      <table class="table" aria-label="Absorption of nutrients table">
+        <thead>
+          <tr>
+            <th>Nutrient</th>
+            <th>Absorbed as</th>
+            <th>Where Absorbed</th>
+            <th>Transported by</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td><strong>Carbohydrates</strong></td><td>Glucose, Fructose, Galactose</td><td>Small intestine (villi)</td><td>Blood (capillaries)</td></tr>
+          <tr><td><strong>Proteins</strong></td><td>Amino acids</td><td>Small intestine (villi)</td><td>Blood (capillaries)</td></tr>
+          <tr><td><strong>Fats</strong></td><td>Fatty acids + Glycerol</td><td>Small intestine (lacteals)</td><td>Lymph → Blood</td></tr>
+          <tr><td><strong>Vitamins & Minerals</strong></td><td>As such (no digestion needed)</td><td>Small intestine</td><td>Blood</td></tr>
+          <tr><td><strong>Water</strong></td><td>Water molecules</td><td>Small + large intestine</td><td>Blood</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <div style="height:14px"></div>
+
+    <!-- Diagram -->
+    <section class="card no-break" aria-label="Diagram – Digestion & Absorption Flow">
+      <h2 style="margin-top:0">5) Diagram – Digestion & Absorption Flow</h2>
+      <svg viewBox="0 0 980 640" width="100%" height="auto" aria-label="Digestion and absorption flow diagram">
+        <defs>
+          <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+            <path d="M0,0 L0,6 L9,3 z" fill="#16a34a" />
+          </marker>
+        </defs>
+        <!-- Food -->
+        <rect x="320" y="20" width="340" height="46" rx="12" ry="12" fill="#fff" stroke="#cbd5e1"/>
+        <text x="490" y="48" text-anchor="middle" font-family="system-ui,Segoe UI,Arial" font-size="16">FOOD (Rice + Dal + Vegetables + Milk)</text>
+        <line x1="490" y1="66" x2="490" y2="98" stroke="#16a34a" stroke-width="3" marker-end="url(#arrow)"/>
+
+        <!-- Mouth -->
+        <rect x="260" y="98" width="460" height="64" rx="12" ry="12" fill="#fff" stroke="#cbd5e1"/>
+        <text x="490" y="126" text-anchor="middle" font-family="system-ui,Segoe UI,Arial" font-size="16">[Mouth] – Saliva digests starch → Maltose</text>
+        <line x1="490" y1="162" x2="490" y2="194" stroke="#16a34a" stroke-width="3" marker-end="url(#arrow)"/>
+
+        <!-- Stomach -->
+        <rect x="240" y="194" width="500" height="64" rx="12" ry="12" fill="#fff" stroke="#cbd5e1"/>
+        <text x="490" y="222" text-anchor="middle" font-family="system-ui,Segoe UI,Arial" font-size="16">[Stomach] – Pepsin digests proteins → Peptones</text>
+        <line x1="490" y1="258" x2="490" y2="290" stroke="#16a34a" stroke-width="3" marker-end="url(#arrow)"/>
+
+        <!-- Small Intestine -->
+        <rect x="120" y="290" width="740" height="140" rx="12" ry="12" fill="#fff" stroke="#cbd5e1"/>
+        <text x="490" y="318" text-anchor="middle" font-family="system-ui,Segoe UI,Arial" font-size="16">[Small Intestine]</text>
+        <text x="490" y="340" text-anchor="middle" font-family="system-ui,Segoe UI,Arial" font-size="14" fill="#475569">• Bile emulsifies fats</text>
+        <text x="490" y="360" text-anchor="middle" font-family="system-ui,Segoe UI,Arial" font-size="14" fill="#475569">• Pancreatic enzymes → carbs, proteins, fats</text>
+        <text x="490" y="380" text-anchor="middle" font-family="system-ui,Segoe UI,Arial" font-size="14" fill="#475569">• Intestinal enzymes → final digestion</text>
+        <line x1="490" y1="430" x2="490" y2="462" stroke="#16a34a" stroke-width="3" marker-end="url(#arrow)"/>
+
+        <!-- Absorption by Villi -->
+        <rect x="210" y="462" width="560" height="108" rx="12" ry="12" fill="#fff" stroke="#cbd5e1"/>
+        <text x="490" y="488" text-anchor="middle" font-family="system-ui,Segoe UI,Arial" font-size="16">[Absorption by Villi]</text>
+        <text x="490" y="510" text-anchor="middle" font-family="system-ui,Segoe UI,Arial" font-size="14" fill="#475569">• Glucose, amino acids → Blood</text>
+        <text x="490" y="530" text-anchor="middle" font-family="system-ui,Segoe UI,Arial" font-size="14" fill="#475569">• Fatty acids, glycerol → Lymph → Blood</text>
+        <text x="490" y="550" text-anchor="middle" font-family="system-ui,Segoe UI,Arial" font-size="14" fill="#475569">• Vitamins, minerals, water → Blood</text>
+        <line x1="490" y1="570" x2="490" y2="602" stroke="#16a34a" stroke-width="3" marker-end="url(#arrow)"/>
+
+        <!-- Assimilation -->
+        <rect x="300" y="602" width="380" height="46" rx="12" ry="12" fill="#fff" stroke="#cbd5e1"/>
+        <text x="490" y="630" text-anchor="middle" font-family="system-ui,Segoe UI,Arial" font-size="16">[Assimilation] → Energy, Growth, Repair</text>
+      </svg>
+      <p class="muted" style="margin-top:8px">Flow from food intake → enzymatic digestion → villi absorption → body use.</p>
+    </section>
+
+    <div style="height:14px"></div>
+
+    <!-- Recap -->
+    <section class="card recap no-break" aria-label="Quick Recap for Students">
+      <h3 style="margin-top:0">✅ Quick Recap for Students</h3>
+      <ul style="margin:0 0 6px 18px">
+        <li><strong>Digestion</strong> = breakdown; <strong>Absorption</strong> = uptake into blood/lymph.</li>
+        <li>Major site of absorption = <strong>small intestine (villi)</strong>.</li>
+        <li>End products: <strong>Glucose</strong>, <strong>Amino acids</strong>, <strong>Fatty acids + Glycerol</strong>, <strong>Vitamins</strong>, <strong>Minerals</strong>, <strong>Water</strong>.</li>
+      </ul>
+    </section>
+
+    <p class="muted" style="text-align:center; font-size:13px; margin-top:16px">Print on A4 (portrait). Want a labeled <strong>Digestive System Flowchart + Exam-style figure</strong> next for drawing practice?</p>
+  </div>
+</body>
+</html>

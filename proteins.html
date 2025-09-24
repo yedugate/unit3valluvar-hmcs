@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Back to Home (paste anywhere inside <body>) -->
+<a href="unit3index.html" class="u3-back" aria-label="Back to Unit 3 Home">
+  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15.5 19l-7-7 7-7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  <span>Home</span>
+</a>
+
+<style>
+  /* Unit 3 Back Button: scoped, unobtrusive */
+  .u3-back{
+    position: fixed; inset: 14px auto auto 14px;
+    display: inline-flex; align-items: center; gap: 8px;
+    padding: 10px 14px; border-radius: 999px;
+    text-decoration: none; font: 600 14px/1.1 system-ui,-apple-system,Segoe UI,Roboto,Arial;
+    color: #0f172a; background: #ffffff; border: 1px solid #e2e8f0;
+    box-shadow: 0 8px 24px rgba(2,6,23,.12); z-index: 9999;
+    transition: transform .12s ease, box-shadow .2s ease, border-color .2s ease;
+  }
+  .u3-back:hover{ transform: translateY(-1px); border-color:#cbd5e1; box-shadow: 0 12px 28px rgba(2,6,23,.16); }
+  .u3-back:active{ transform: translateY(0); }
+  .u3-back svg{ width: 18px; height: 18px }
+  /* Dark mode */
+  @media (prefers-color-scheme: dark){
+    .u3-back{ color:#e5eefc; background:#0f172a; border-color:#1f2937; box-shadow:none }
+    .u3-back:hover{ border-color:#334155 }
+  }
+  /* Respect in-page anchored headers */
+  @media (max-width:480px){ .u3-back{ padding: 9px 12px } }
+  /* Hide in print */
+  @media print{ .u3-back{ display:none !important } }
+</style>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Proteins – Body Builders (Printable)</title>
+  <style>
+    :root{
+      --bg:#f7fafc; --card:#ffffff; --ink:#0f172a; --muted:#475569; --accent:#16a34a; --accent-2:#0ea5e9; --border:#e2e8f0; --shadow:0 6px 24px rgba(2,6,23,.08); --radius:16px;
+    }
+    *{box-sizing:border-box}
+    body{margin:0; color:var(--ink); background:var(--bg); font:16px/1.6 system-ui, -apple-system, Segoe UI, Roboto, Arial}
+    .wrap{max-width:1100px; margin:auto; padding:28px 16px}
+    .hero{background:linear-gradient(160deg,#ecfdf5,#eff6ff); border:1px solid var(--border); border-radius:var(--radius); padding:24px; box-shadow:var(--shadow)}
+    h1{margin:0 0 6px 0; font-size:clamp(28px,4vw,40px)}
+    .subtitle{margin:0; color:var(--muted)}
+    .card{background:var(--card); border:1px solid var(--border); border-radius:var(--radius); padding:18px 20px; box-shadow:var(--shadow)}
+    .lead{font-size:18px}
+    .grid{display:grid; gap:18px; grid-template-columns:repeat(12,1fr)}
+    .muted{color:var(--muted)}
+    .recap{background:#f0fdf4; border:1px solid #bbf7d0}
+    .tag{display:inline-block; padding:6px 10px; border-radius:999px; border:1px solid var(--border); background:#f8fafc; margin:4px 6px 0 0; font-size:14px}
+    /* Tables */
+    .table{width:100%; border-collapse:separate; border-spacing:0; overflow:hidden; border-radius:14px; border:1px solid var(--border); page-break-inside:auto}
+    .table thead th{background:#f1f5f9; color:#0b1220; text-align:left; font-weight:700; padding:10px 12px; border-bottom:1px solid var(--border)}
+    .table td{padding:10px 12px; vertical-align:top; border-bottom:1px solid var(--border)}
+    .table tr:last-child td{border-bottom:none}
+    .note{font-size:13px; color:var(--muted)}
+    .no-break{page-break-inside:avoid}
+    /* Print Styles */
+    @page { size: A4; margin: 14mm; }
+    @media print{
+      body{background:#fff}
+      .wrap{max-width:none; padding:0}
+      .hero, .card{box-shadow:none}
+      .hero{background:#fff}
+      .table thead th{background:#eaf0f8; -webkit-print-color-adjust:exact; print-color-adjust:exact}
+      a[href]:after{content:""}
+    }
+    @media (max-width: 840px){ .grid{grid-template-columns:1fr} }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <section class="hero no-break">
+      <h1>Proteins – <span style="color:var(--accent)">Body Builders</span></h1>
+      <p class="subtitle">11th–12th grade • Definition & basics • Amino acids • Classification • Sources & functions • One digestion diagram • Printable</p>
+    </section>
+
+    <div style="height:14px"></div>
+
+    <!-- Definition -->
+    <section class="card no-break" aria-label="Definition">
+      <h2 style="margin-top:0">Definition</h2>
+      <p class="lead">Proteins are <strong>organic compounds</strong> made of <strong>amino acids</strong>, containing <strong>Carbon (C), Hydrogen (H), Oxygen (O), and Nitrogen (N)</strong> (sometimes <strong>Sulfur</strong> and <strong>Phosphorus</strong>). They are called <strong>body‑building foods</strong> because they help in <strong>growth and repair</strong>.</p>
+      <div>
+        <span class="tag">Amino acids</span>
+        <span class="tag">Peptide bonds</span>
+        <span class="tag">Growth & repair</span>
+      </div>
+    </section>
+
+    <div style="height:14px"></div>
+
+    <!-- Biochemical Basics -->
+    <section class="card no-break" aria-label="Biochemical Basics">
+      <h2 style="margin-top:0">1) Biochemical Basics</h2>
+      <ul style="margin:0 0 6px 18px">
+        <li><strong>Proteins</strong> = chains of <strong>amino acids</strong> joined by <strong>peptide bonds</strong>.</li>
+        <li><strong>Amino acids</strong> are the building blocks of proteins.</li>
+      </ul>
+      <div class="grid" style="margin-top:10px">
+        <div class="card" style="grid-column:span 6">
+          <h3 style="margin-top:0">Essential vs Non‑essential Amino Acids</h3>
+          <table class="table" aria-label="Amino acids">
+            <thead><tr><th>Group</th><th>Meaning</th><th>Examples</th></tr></thead>
+            <tbody>
+              <tr><td><strong>Essential</strong></td><td>Must come from food</td><td>Lysine, Methionine, Tryptophan, Leucine, Isoleucine, Valine, Threonine, Phenylalanine, Histidine*</td></tr>
+              <tr><td><strong>Non‑essential</strong></td><td>Body can synthesize</td><td>Alanine, Aspartic acid, Glutamic acid, Serine, Glycine, Proline, Tyrosine**</td></tr>
+            </tbody>
+          </table>
+          <p class="note">*Histidine is essential in infants; **Tyrosine becomes essential if phenylalanine is low.</p>
+        </div>
+        <div class="card" style="grid-column:span 6">
+          <h3 style="margin-top:0">Protein Quality (Quick)</h3>
+          <table class="table" aria-label="Protein quality">
+            <thead><tr><th>Concept</th><th>Simple Note</th></tr></thead>
+            <tbody>
+              <tr><td><strong>Complete proteins</strong></td><td>Contain all essential amino acids in good amounts (e.g., egg, milk, fish)</td></tr>
+              <tr><td><strong>Complementation</strong></td><td>Combine cereals + pulses to improve amino acid balance (e.g., rice + dal)</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <div style="height:14px"></div>
+
+    <!-- Classification -->
+    <section class="card no-break" aria-label="Classification of Proteins">
+      <h2 style="margin-top:0">2) Classification of Proteins (Basic)</h2>
+      <table class="table" aria-label="Protein classification">
+        <thead>
+          <tr>
+            <th>Type</th><th>Basis</th><th>Examples</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td><strong>Simple proteins</strong></td><td>Yield only amino acids on hydrolysis</td><td>Albumin (egg white), Globulin (plasma protein)</td></tr>
+          <tr><td><strong>Conjugated proteins</strong></td><td>Protein + non‑protein part (prosthetic group)</td><td>Hemoglobin (heme + globin), Lipoprotein</td></tr>
+          <tr><td><strong>Derived proteins</strong></td><td>Breakdown products of simple/complex proteins</td><td>Peptones, Proteoses</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <div style="height:14px"></div>
+
+    <!-- Sources -->
+    <section class="card no-break" aria-label="Sources of Proteins">
+      <h2 style="margin-top:0">3) Sources of Proteins</h2>
+      <table class="table" aria-label="Protein sources">
+        <thead><tr><th>Category</th><th>Examples</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Animal sources</strong> (rich in essential AAs)</td><td>Milk, eggs, fish, chicken, meat</td></tr>
+          <tr><td><strong>Plant sources</strong></td><td>Pulses, soybean, groundnut, cereals, nuts</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <div style="height:14px"></div>
+
+    <!-- Functions -->
+    <section class="card no-break" aria-label="Functions of Proteins">
+      <h2 style="margin-top:0">4) Functions of Proteins</h2>
+      <table class="table" aria-label="Protein functions">
+        <thead><tr><th>Function</th><th>Explanation (Simple)</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Growth & repair</strong></td><td>Build muscles, bones, tissues</td></tr>
+          <tr><td><strong>Enzymes & hormones</strong></td><td>Speed reactions, regulate body functions</td></tr>
+          <tr><td><strong>Immunity</strong></td><td>Antibodies are proteins</td></tr>
+          <tr><td><strong>Transport</strong></td><td>Hemoglobin carries oxygen</td></tr>
+          <tr><td><strong>Energy (last resort)</strong></td><td>~4 kcal/g when carbs/fats are insufficient</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <div style="height:14px"></div>
+
+    <!-- Health aspects -->
+    <section class="card no-break" aria-label="Health Aspects">
+      <h2 style="margin-top:0">5) Health Aspects</h2>
+      <table class="table" aria-label="Protein health aspects">
+        <thead><tr><th>Aspect</th><th>Details</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Deficiency</strong></td><td><strong>Kwashiorkor</strong> (edema, skin/hair changes), <strong>Marasmus</strong> (severe wasting, stunted growth)</td></tr>
+          <tr><td><strong>Excess</strong></td><td>Kidney overload, dehydration, bone calcium loss</td></tr>
+          <tr><td><strong>RDA</strong></td><td><em>0.8–1 g/kg</em> body weight (~50–60 g/day for adults)</td></tr>
+        </tbody>
+      </table>
+      <p class="note">Balance sources: mix plant and animal proteins or use cereal‑pulse complementation.</p>
+    </section>
+
+    <div style="height:14px"></div>
+
+    <!-- Digestion Diagram -->
+    <section class="card no-break" aria-label="Digestion of Proteins – Simplified Flow">
+      <h2 style="margin-top:0">6) Digestion of Proteins – Simplified Flow</h2>
+      <svg viewBox="0 0 980 520" width="100%" height="auto" aria-label="Protein digestion flow">
+        <defs>
+          <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+            <path d="M0,0 L0,6 L9,3 z" fill="#16a34a" />
+          </marker>
+        </defs>
+        <!-- Food -->
+        <rect x="360" y="20" width="260" height="48" rx="12" ry="12" fill="#ffffff" stroke="#cbd5e1"/>
+        <text x="490" y="50" text-anchor="middle" font-family="system-ui,Segoe UI,Arial" font-size="16">FOOD (Milk, Dal, Eggs, Meat)</text>
+        <line x1="490" y1="68" x2="490" y2="100" stroke="#16a34a" stroke-width="3" marker-end="url(#arrow)"/>
+
+        <!-- Mouth -->
+        <rect x="270" y="100" width="440" height="66" rx="12" ry="12" fill="#ffffff" stroke="#cbd5e1"/>
+        <text x="490" y="128" text-anchor="middle" font-family="system-ui,Segoe UI,Arial" font-size="16">[Mouth] – No protein digestion (only chewing)</text>
+        <line x1="490" y1="166" x2="490" y2="198" stroke="#16a34a" stroke-width="3" marker-end="url(#arrow)"/>
+
+        <!-- Stomach -->
+        <rect x="210" y="198" width="560" height="80" rx="12" ry="12" fill="#ffffff" stroke="#cbd5e1"/>
+        <text x="490" y="228" text-anchor="middle" font-family="system-ui,Segoe UI,Arial" font-size="16">[Stomach] – Pepsin + HCl: Proteins → Peptones/Polypeptides</text>
+        <line x1="490" y1="278" x2="490" y2="310" stroke="#16a34a" stroke-width="3" marker-end="url(#arrow)"/>
+
+        <!-- Small Intestine -->
+        <rect x="120" y="310" width="740" height="92" rx="12" ry="12" fill="#ffffff" stroke="#cbd5e1"/>
+        <text x="490" y="338" text-anchor="middle" font-family="system-ui,Segoe UI,Arial" font-size="16">[Small Intestine]</text>
+        <text x="490" y="360" text-anchor="middle" font-family="system-ui,Segoe UI,Arial" font-size="14" fill="#475569">Trypsin & Chymotrypsin (pancreas) → Peptides • Peptidases → Amino acids</text>
+        <line x1="490" y1="402" x2="490" y2="434" stroke="#16a34a" stroke-width="3" marker-end="url(#arrow)"/>
+
+        <!-- Absorption -->
+        <rect x="260" y="434" width="460" height="66" rx="12" ry="12" fill="#ffffff" stroke="#cbd5e1"/>
+        <text x="490" y="462" text-anchor="middle" font-family="system-ui,Segoe UI,Arial" font-size="16">[Absorption] – Amino acids enter blood (villi)</text>
+        <line x1="490" y1="500" x2="490" y2="520" stroke="#16a34a" stroke-width="3"/>
+
+        <!-- End result note -->
+        <text x="490" y="518" text-anchor="middle" font-family="system-ui,Segoe UI,Arial" font-size="13" fill="#334155">End result: Used for Growth, Repair, Enzymes, Hormones</text>
+      </svg>
+      <p class="muted" style="margin-top:8px">One diagram: from food intake to amino‑acid absorption and usage.</p>
+    </section>
+
+    <div style="height:14px"></div>
+
+    <!-- Recap -->
+    <section class="card recap no-break" aria-label="Quick Recap">
+      <h3 style="margin-top:0">Quick Recap for Students</h3>
+      <ul style="margin:0 0 6px 18px">
+        <li>Proteins = <strong>chains of amino acids</strong> (building blocks of life).</li>
+        <li>Classification: <strong>Simple, Conjugated, Derived</strong>.</li>
+        <li>Sources: milk, pulses, eggs, fish, soybean.</li>
+        <li>Functions: growth, repair, enzymes, hormones, immunity, transport.</li>
+        <li>Deficiency: <strong>Kwashiorkor</strong>, <strong>Marasmus</strong>; RDA ~ <strong>0.8–1 g/kg</strong>.</li>
+      </ul>
+    </section>
+
+    <p class="muted" style="text-align:center; font-size:13px; margin-top:16px">Print on A4 (portrait). Want Tamil side‑by‑side or proceed to Fats next?</p>
+  </div>
+</body>
+</html>

@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>UNIT - III - NUTRITION — Index</title>
+  <meta name="description" content="Unit III Nutrition: Definition, classification, macro & micro nutrients, carbohydrates, proteins, fats, minerals, vitamins, water & fiber, sources, deficiency & excess diseases, RDA, digestion & absorption." />
+  <style>
+    :root{
+      --ink:#0f172a; --muted:#475569; --bg:#f8fafc; --card:#ffffff; --border:#e2e8f0;
+      --accent:#16a34a; --accent2:#0ea5e9; --shadow:0 10px 28px rgba(2,6,23,.12);
+      --radius:16px; --ring:#22c55e33;
+    }
+    @media (prefers-color-scheme: dark){
+      :root{ --bg:#0b1220; --card:#0f172a; --ink:#e5eefc; --muted:#94a3b8; --border:#1f2937; --shadow:none }
+      .chip{background:#12223a}
+      .carousel .dots button{background:#1f2937}
+    }
+    *{box-sizing:border-box}
+    body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,Arial}
+    .wrap{max-width:1200px;margin:auto;padding:18px 14px}
+    header{display:flex;gap:14px;align-items:center;justify-content:space-between;flex-wrap:wrap}
+    h1{font-size:clamp(24px,4vw,38px);margin:0}
+    .subtitle{margin:0;color:var(--muted)}
+    .chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
+    .chip{padding:6px 10px;border-radius:999px;border:1px solid var(--border);background:#eef6ff;font-size:13px;color:#0b1220}
+    /* Carousel */
+    .carousel{position:relative;overflow:hidden;border-radius:var(--radius);border:1px solid var(--border);box-shadow:var(--shadow);margin-top:14px}
+    .track{display:flex;transition:transform .5s ease;touch-action:pan-y;will-change:transform}
+    .slide{min-width:100%;height:auto;aspect-ratio:21/9;background:#000;display:flex;align-items:center;justify-content:center}
+    .slide img{width:100%;height:100%;object-fit:cover;display:block}
+    .nav{position:absolute;inset:0;display:flex;align-items:center;justify-content:space-between;pointer-events:none}
+    .nav button{pointer-events:auto;appearance:none;border:none;background:#0b122080;color:#fff;width:44px;height:44px;border-radius:50%;margin:0 8px;display:grid;place-items:center;cursor:pointer;transition:transform .12s, background .2s}
+    .nav button:hover{transform:scale(1.05);background:#0b1220cc}
+    .dots{position:absolute;left:0;right:0;bottom:8px;display:flex;gap:8px;justify-content:center}
+    .dots button{width:9px;height:9px;border-radius:50%;border:1px solid #fff;background:#ffffff90;cursor:pointer}
+    .dots button[aria-current="true"]{background:#22c55e;border-color:#22c55e}
+    .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+    /* Search */
+    .toolbar{display:flex;gap:10px;align-items:center;justify-content:space-between;margin:14px 0}
+    .search{flex:1;display:flex;gap:8px;align-items:center;background:var(--card);border:1px solid var(--border);border-radius:12px;padding:10px 12px;box-shadow:var(--shadow)}
+    .search input{border:none;outline:none;background:transparent;color:inherit;width:100%}
+    /* Grid */
+    .grid{display:grid;gap:14px;grid-template-columns:repeat(1,minmax(0,1fr))}
+    @media(min-width:720px){.grid{grid-template-columns:repeat(2,1fr)}}
+    @media(min-width:1024px){.grid{grid-template-columns:repeat(3,1fr)}}
+    .card{display:flex;gap:12px;align-items:flex-start;text-decoration:none;background:var(--card);border:1px solid var(--border);border-radius:14px;padding:14px;box-shadow:var(--shadow);color:inherit;transition:transform .12s,border-color .2s,box-shadow .2s}
+    .card:hover{transform:translateY(-2px);border-color:#cbd5e1;box-shadow:0 14px 32px rgba(2,6,23,.14)}
+    .icon{font-size:24px;line-height:1}
+    .title{font-weight:700;margin-bottom:2px}
+    .sub{color:var(--muted);font-size:13px}
+    .meta{min-width:0}
+    /* Footer */
+    footer{text-align:center;color:var(--muted);font-size:13px;margin:18px 0}
+    /* Print */
+    @page { size: A4; margin:12mm; }
+    @media print{ .carousel, .toolbar{display:none} .card{box-shadow:none} }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div>
+        <h1>UNIT - III - NUTRITION — Index</h1>
+        <p class="subtitle">Definition of Nutrition • Nutrition classification • Macro & Micro nutrients • Carbohydrates, proteins, fats, minerals, vitamins, water & fiber • Sources • Deficiency diseases • Excessive intake • RDA • Digestion & absorption of food</p>
+        <div class="chips">
+          <span class="chip">Student-friendly</span>
+          <span class="chip">Mobile-ready</span>
+          <span class="chip">Printable</span>
+        </div>
+      </div>
+    </header>
+
+    <!-- Carousel -->
+    <section class="carousel" aria-label="Banner">
+      <div class="track" id="track">
+        <div class="slide"><img src="banner1.png" alt="Nutrition resources banner 1"></div>
+        <div class="slide"><img src="banner2.png" alt="Nutrition resources banner 2"></div>
+        <div class="slide"><img src="banner3.png" alt="Nutrition resources banner 3"></div>
+      </div>
+      <div class="nav">
+        <button id="prev" aria-label="Previous slide">❮</button>
+        <button id="next" aria-label="Next slide">❯</button>
+      </div>
+      <div class="dots" role="tablist" aria-label="Select slide">
+        <button role="tab" aria-controls="slide1" aria-current="true" data-i="0"><span class="sr-only">Slide 1</span></button>
+        <button role="tab" aria-controls="slide2" data-i="1"><span class="sr-only">Slide 2</span></button>
+        <button role="tab" aria-controls="slide3" data-i="2"><span class="sr-only">Slide 3</span></button>
+      </div>
+    </section>
+
+    <!-- Tools -->
+    <div class="toolbar">
+      <div class="search" role="search">
+        <span aria-hidden="true">🔎</span>
+        <input id="filter" type="search" placeholder="Search topics (e.g., vitamins, sources, RDA)..." />
+      </div>
+    </div>
+
+    <!-- Grid of links -->
+    <section class="grid" id="cards">
+      <a class="card" href="Definition%20of%20Nutrition.html" title="Definition of Nutrition.html">
+          <div class="icon" aria-hidden="true">📘</div>
+          <div class="meta">
+            <div class="title">Definition of Nutrition</div>
+            <div class="sub">Open topic</div>
+          </div>
+        </a>
+<a class="card" href="Nutrition%20%26%20Nutrient%20Classification.html" title="Nutrition & Nutrient Classification.html">
+          <div class="icon" aria-hidden="true">📘</div>
+          <div class="meta">
+            <div class="title">Nutrition & Nutrient Classification</div>
+            <div class="sub">Open topic</div>
+          </div>
+        </a>
+<a class="card" href="Carbohydrates.html" title="Carbohydrates.html">
+          <div class="icon" aria-hidden="true">📘</div>
+          <div class="meta">
+            <div class="title">Carbohydrates</div>
+            <div class="sub">Open topic</div>
+          </div>
+        </a>
+<a class="card" href="proteins.html" title="proteins.html">
+          <div class="icon" aria-hidden="true">📘</div>
+          <div class="meta">
+            <div class="title">Proteins</div>
+            <div class="sub">Open topic</div>
+          </div>
+        </a>
+<a class="card" href="fats%28lipids%29.html" title="fats(lipids).html">
+          <div class="icon" aria-hidden="true">📘</div>
+          <div class="meta">
+            <div class="title">Fats(lipids)</div>
+            <div class="sub">Open topic</div>
+          </div>
+        </a>
+<a class="card" href="water%26fiber.html" title="water&fiber.html">
+          <div class="icon" aria-hidden="true">📘</div>
+          <div class="meta">
+            <div class="title">Water&fiber</div>
+            <div class="sub">Open topic</div>
+          </div>
+        </a>
+<a class="card" href="minerals.html" title="minerals.html">
+          <div class="icon" aria-hidden="true">📘</div>
+          <div class="meta">
+            <div class="title">Minerals</div>
+            <div class="sub">Open topic</div>
+          </div>
+        </a>
+<a class="card" href="vitamins.html" title="vitamins.html">
+          <div class="icon" aria-hidden="true">📘</div>
+          <div class="meta">
+            <div class="title">Vitamins</div>
+            <div class="sub">Open topic</div>
+          </div>
+        </a>
+<a class="card" href="Sources%20of%20Nutrients.html" title="Sources of Nutrients.html">
+          <div class="icon" aria-hidden="true">📘</div>
+          <div class="meta">
+            <div class="title">Sources of Nutrients</div>
+            <div class="sub">Open topic</div>
+          </div>
+        </a>
+<a class="card" href="Deficiency%20Diseases.html" title="Deficiency Diseases.html">
+          <div class="icon" aria-hidden="true">📘</div>
+          <div class="meta">
+            <div class="title">Deficiency Diseases</div>
+            <div class="sub">Open topic</div>
+          </div>
+        </a>
+<a class="card" href="Excessive%20Intake%20of%20Nutrients.html" title="Excessive Intake of Nutrients.html">
+          <div class="icon" aria-hidden="true">📘</div>
+          <div class="meta">
+            <div class="title">Excessive Intake of Nutrients</div>
+            <div class="sub">Open topic</div>
+          </div>
+        </a>
+<a class="card" href="RDA%20%E2%80%93%20Recommended%20Dietary%20Allowance.html" title="RDA – Recommended Dietary Allowance.html">
+          <div class="icon" aria-hidden="true">📘</div>
+          <div class="meta">
+            <div class="title">RDA – Recommended Dietary Allowance</div>
+            <div class="sub">Open topic</div>
+          </div>
+        </a>
+<a class="card" href="Digestion%20and%20Absorption%20of%20Food.html" title="Digestion and Absorption of Food.html">
+          <div class="icon" aria-hidden="true">📘</div>
+          <div class="meta">
+            <div class="title">Digestion and Absorption of Food</div>
+            <div class="sub">Open topic</div>
+          </div>
+        </a>
+    </section>
+
+    <footer>© Unit III — Nutrition • Designed for 11th–12th graders</footer>
+  </div>
+
+  <script>
+    // --- Simple Carousel with autoplay + swipe + keyboard ---
+    (function(){
+      const track = document.getElementById('track');
+      const dots = Array.from(document.querySelectorAll('.dots button'));
+      const prev = document.getElementById('prev');
+      const next = document.getElementById('next');
+      const total = 3;
+      let i = 0, timer, startX = null, dx = 0;
+      const set = (n)=>{
+        i = (n + total) % total;
+        track.style.transform = `translateX(${-100*i}%)`;
+        dots.forEach((d,idx)=>d.setAttribute('aria-current', idx===i ? 'true':'false'));
+      };
+      const auto = ()=>{ clearInterval(timer); timer = setInterval(()=>set(i+1), 4000); };
+      prev.addEventListener('click', ()=>{ set(i-1); auto(); });
+      next.addEventListener('click', ()=>{ set(i+1); auto(); });
+      dots.forEach(d=>d.addEventListener('click', ()=>{ set(+d.dataset.i); auto(); }));
+      // Swipe
+      track.addEventListener('touchstart', (e)=>{ startX = e.touches[0].clientX; dx=0; clearInterval(timer); }, {passive:true});
+      track.addEventListener('touchmove', (e)=>{ if(startX===null) return; dx = e.touches[0].clientX - startX; track.style.transform = `translateX(calc(${-100*i}% + ${dx}px))`; }, {passive:true});
+      track.addEventListener('touchend', ()=>{ if(Math.abs(dx)>60) set(i + (dx<0?1:-1)); else set(i); auto(); startX=null; });
+      // Keyboard
+      document.addEventListener('keydown', (e)=>{ if(e.key==='ArrowRight') next.click(); if(e.key==='ArrowLeft') prev.click(); });
+      auto();
+    })();
+
+    // --- Filter cards ---
+    (function(){
+      const q = document.getElementById('filter');
+      const cards = Array.from(document.querySelectorAll('.card'));
+      const title = (el)=>el.querySelector('.title').textContent.toLowerCase();
+      q.addEventListener('input', ()=>{
+        const v = q.value.trim().toLowerCase();
+        cards.forEach(c=>{
+          const show = title(c).includes(v);
+          c.style.display = show ? '' : 'none';
+        });
+      });
+    })();
+  </script>
+</body>
+</html>

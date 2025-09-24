@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Back to Home (paste anywhere inside <body>) -->
+<a href="unit3index.html" class="u3-back" aria-label="Back to Unit 3 Home">
+  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15.5 19l-7-7 7-7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  <span>Home</span>
+</a>
+
+<style>
+  /* Unit 3 Back Button: scoped, unobtrusive */
+  .u3-back{
+    position: fixed; inset: 14px auto auto 14px;
+    display: inline-flex; align-items: center; gap: 8px;
+    padding: 10px 14px; border-radius: 999px;
+    text-decoration: none; font: 600 14px/1.1 system-ui,-apple-system,Segoe UI,Roboto,Arial;
+    color: #0f172a; background: #ffffff; border: 1px solid #e2e8f0;
+    box-shadow: 0 8px 24px rgba(2,6,23,.12); z-index: 9999;
+    transition: transform .12s ease, box-shadow .2s ease, border-color .2s ease;
+  }
+  .u3-back:hover{ transform: translateY(-1px); border-color:#cbd5e1; box-shadow: 0 12px 28px rgba(2,6,23,.16); }
+  .u3-back:active{ transform: translateY(0); }
+  .u3-back svg{ width: 18px; height: 18px }
+  /* Dark mode */
+  @media (prefers-color-scheme: dark){
+    .u3-back{ color:#e5eefc; background:#0f172a; border-color:#1f2937; box-shadow:none }
+    .u3-back:hover{ border-color:#334155 }
+  }
+  /* Respect in-page anchored headers */
+  @media (max-width:480px){ .u3-back{ padding: 9px 12px } }
+  /* Hide in print */
+  @media print{ .u3-back{ display:none !important } }
+</style>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Vitamins – Protective Nutrients (Printable)</title>
+  <style>
+    :root{
+      --bg:#f7fafc; --card:#ffffff; --ink:#0f172a; --muted:#475569; --accent:#16a34a; --accent-2:#0ea5e9; --border:#e2e8f0; --shadow:0 6px 24px rgba(2,6,23,.08); --radius:16px;
+    }
+    *{box-sizing:border-box}
+    body{margin:0; color:var(--ink); background:var(--bg); font:16px/1.6 system-ui, -apple-system, Segoe UI, Roboto, Arial}
+    .wrap{max-width:1100px; margin:auto; padding:28px 16px}
+    .hero{background:linear-gradient(160deg,#ecfdf5,#eff6ff); border:1px solid var(--border); border-radius:var(--radius); padding:24px; box-shadow:var(--shadow)}
+    h1{margin:0 0 6px 0; font-size:clamp(28px,4vw,40px)}
+    .subtitle{margin:0; color:var(--muted)}
+    .card{background:var(--card); border:1px solid var(--border); border-radius:var(--radius); padding:18px 20px; box-shadow:var(--shadow)}
+    .lead{font-size:18px}
+    .grid{display:grid; gap:18px; grid-template-columns:repeat(12,1fr)}
+    .muted{color:var(--muted)}
+    .recap{background:#f0fdf4; border:1px solid #bbf7d0}
+    .tag{display:inline-block; padding:6px 10px; border-radius:999px; border:1px solid var(--border); background:#f8fafc; margin:4px 6px 0 0; font-size:14px}
+    /* Tables */
+    .table{width:100%; border-collapse:separate; border-spacing:0; overflow:hidden; border-radius:14px; border:1px solid var(--border); page-break-inside:auto}
+    .table thead th{background:#f1f5f9; color:#0b1220; text-align:left; font-weight:700; padding:10px 12px; border-bottom:1px solid var(--border)}
+    .table td{padding:10px 12px; vertical-align:top; border-bottom:1px solid var(--border)}
+    .table tr:last-child td{border-bottom:none}
+    .note{font-size:13px; color:var(--muted)}
+    .no-break{page-break-inside:avoid}
+    /* Print Styles */
+    @page { size: A4; margin: 14mm; }
+    @media print{
+      body{background:#fff}
+      .wrap{max-width:none; padding:0}
+      .hero, .card{box-shadow:none}
+      .hero{background:#fff}
+      .table thead th{background:#eaf0f8; -webkit-print-color-adjust:exact; print-color-adjust:exact}
+      a[href]:after{content:""}
+    }
+    @media (max-width: 840px){ .grid{grid-template-columns:1fr} }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <section class="hero no-break">
+      <h1>Vitamins – <span style="color:var(--accent)">Protective Nutrients</span></h1>
+      <p class="subtitle">11th–12th grade • Definition & biochemistry • Classification • Tables (sources/functions/deficiency/RDA) • Vitamin B‑complex detail • One absorption diagram • Printable</p>
+    </section>
+
+    <div style="height:14px"></div>
+
+    <!-- Definition & Biochemistry -->
+    <section class="card no-break" aria-label="Definition & Biochemistry">
+      <h2 style="margin-top:0">1) Definition & Biochemistry</h2>
+      <p class="lead">Vitamins are <strong>organic compounds</strong> required in <strong>small amounts</strong> for growth, metabolism, and health.</p>
+      <ul style="margin:0 0 6px 18px">
+        <li>They <strong>do not provide energy</strong>, but act as <strong>coenzymes</strong> and regulators in biochemical reactions.</li>
+        <li>Most vitamins <strong>cannot be synthesized</strong> by the body (exceptions: <strong>Vitamin D</strong> from sunlight; <strong>Vitamin K</strong> & <strong>B<sub>12</sub></strong> from gut bacteria).</li>
+      </ul>
+      <div>
+        <span class="tag">Coenzymes</span>
+        <span class="tag">Micronutrients</span>
+        <span class="tag">No calories</span>
+      </div>
+    </section>
+
+    <div style="height:14px"></div>
+
+    <!-- Classification -->
+    <section class="card no-break" aria-label="Classification of Vitamins">
+      <h2 style="margin-top:0">2) Classification of Vitamins</h2>
+      <table class="table" aria-label="Vitamin classification table">
+        <thead>
+          <tr>
+            <th>Group</th>
+            <th>Solubility</th>
+            <th>Examples</th>
+            <th>Storage</th>
+            <th>Deficiency Risk</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Fat‑soluble</strong></td>
+            <td>Dissolve in fats & oils</td>
+            <td>A, D, E, K</td>
+            <td>Stored in liver & adipose tissue</td>
+            <td>Rare; toxicity possible if excess</td>
+          </tr>
+          <tr>
+            <td><strong>Water‑soluble</strong></td>
+            <td>Dissolve in water</td>
+            <td>Vitamin C, Vitamin B‑complex</td>
+            <td>Not stored; excess lost in urine</td>
+            <td>Deficiency more common; toxicity rare</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <div style="height:14px"></div>
+
+    <!-- Fat-soluble -->
+    <section class="card no-break" aria-label="Fat-Soluble Vitamins">
+      <h2 style="margin-top:0">3) Fat‑Soluble Vitamins</h2>
+      <table class="table" aria-label="Fat-soluble table">
+        <thead>
+          <tr>
+            <th>Vitamin</th><th>Sources</th><th>Functions</th><th>Deficiency</th><th>Excess</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td><strong>A (Retinol)</strong></td><td>Carrot, papaya, fish liver oil, milk</td><td>Vision, skin health, immunity</td><td>Night blindness, xerophthalmia</td><td>Liver damage, bone pain</td></tr>
+          <tr><td><strong>D (Calciferol)</strong></td><td>Sunlight, fish, milk, egg yolk</td><td>Calcium absorption, bone health</td><td>Rickets, osteomalacia</td><td>Hypercalcemia, kidney stones</td></tr>
+          <tr><td><strong>E (Tocopherol)</strong></td><td>Vegetable oils, nuts, seeds</td><td>Antioxidant, protects cells</td><td>Muscle weakness, infertility</td><td>Rare (very high dose)</td></tr>
+          <tr><td><strong>K (Phylloquinone)</strong></td><td>Green leafy vegetables, gut bacteria</td><td>Blood clotting, bone health</td><td>Excessive bleeding</td><td>Rare (jaundice in infants)</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <div style="height:14px"></div>
+
+    <!-- Water-soluble C -->
+    <section class="card no-break" aria-label="Vitamin C">
+      <h2 style="margin-top:0">4) Water‑Soluble Vitamins</h2>
+      <h3 style="margin-top:0.2rem">Vitamin C (Ascorbic Acid)</h3>
+      <ul style="margin:0 0 6px 18px">
+        <li><strong>Sources:</strong> Citrus fruits, amla, guava, tomato.</li>
+        <li><strong>Functions:</strong> Collagen formation, wound healing, antioxidant, immunity.</li>
+        <li><strong>Deficiency:</strong> Scurvy (bleeding gums, delayed healing).</li>
+        <li><strong>Excess:</strong> Diarrhea, kidney stones.</li>
+        <li><strong>RDA:</strong> ~75–90 mg/day.</li>
+      </ul>
+
+      <h3 style="margin-top:0.8rem">Vitamin B‑Complex (Detailed)</h3>
+      <table class="table" aria-label="Vitamin B-complex table">
+        <thead>
+          <tr>
+            <th>Vitamin</th><th>Biochemical Name</th><th>Sources</th><th>Functions (Simple)</th><th>Deficiency Disease</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td><strong>B<sub>1</sub></strong></td><td>Thiamine</td><td>Whole grains, pulses, pork, nuts</td><td>Carbohydrate metabolism, nerve function</td><td>Beri‑beri (nerve disorder, muscle weakness)</td></tr>
+          <tr><td><strong>B<sub>2</sub></strong></td><td>Riboflavin</td><td>Milk, eggs, green leafy vegetables</td><td>Coenzyme in energy metabolism</td><td>Cheilosis (cracks at mouth), eye problems</td></tr>
+          <tr><td><strong>B<sub>3</sub></strong></td><td>Niacin</td><td>Meat, fish, groundnut, cereals</td><td>Energy metabolism (NAD/NADP)</td><td>Pellagra (dermatitis, diarrhea, dementia)</td></tr>
+          <tr><td><strong>B<sub>5</sub></strong></td><td>Pantothenic acid</td><td>Eggs, fish, cereals</td><td>Coenzyme A synthesis</td><td>Rare – fatigue, insomnia</td></tr>
+          <tr><td><strong>B<sub>6</sub></strong></td><td>Pyridoxine</td><td>Meat, banana, pulses, nuts</td><td>Amino acid metabolism, hemoglobin synthesis</td><td>Anemia, irritability, convulsions</td></tr>
+          <tr><td><strong>B<sub>7</sub></strong></td><td>Biotin</td><td>Egg yolk, nuts, yeast</td><td>Fat & carbohydrate metabolism</td><td>Dermatitis, hair loss</td></tr>
+          <tr><td><strong>B<sub>9</sub></strong></td><td>Folic acid</td><td>Spinach, legumes, liver</td><td>DNA synthesis, RBC formation</td><td>Megaloblastic anemia, neural tube defects</td></tr>
+          <tr><td><strong>B<sub>12</sub></strong></td><td>Cobalamin</td><td>Animal foods (meat, milk, eggs)</td><td>RBC formation, nerve function</td><td>Pernicious anemia, nerve damage</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <div style="height:14px"></div>
+
+    <!-- Diagram -->
+    <section class="card no-break" aria-label="Digestion & Absorption of Vitamins – Simplified">
+      <h2 style="margin-top:0">5) Digestion & Absorption of Vitamins – Diagram (Simplified)</h2>
+      <svg viewBox="0 0 980 520" width="100%" height="auto" aria-label="Vitamin absorption flow">
+        <defs>
+          <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+            <path d="M0,0 L0,6 L9,3 z" fill="#16a34a" />
+          </marker>
+        </defs>
+        <!-- Food -->
+        <rect x="300" y="20" width="380" height="48" rx="12" ry="12" fill="#ffffff" stroke="#cbd5e1"/>
+        <text x="490" y="50" text-anchor="middle" font-family="system-ui,Segoe UI,Arial" font-size="16">FOOD (Fruits, Vegetables, Milk, Meat, Oils)</text>
+        <line x1="490" y1="68" x2="490" y2="100" stroke="#16a34a" stroke-width="3" marker-end="url(#arrow)"/>
+
+        <!-- Stomach -->
+        <rect x="260" y="100" width="460" height="80" rx="12" ry="12" fill="#ffffff" stroke="#cbd5e1"/>
+        <text x="490" y="128" text-anchor="middle" font-family="system-ui,Segoe UI,Arial" font-size="16">[Stomach] – Releases vitamins from food</text>
+        <line x1="490" y1="180" x2="490" y2="212" stroke="#16a34a" stroke-width="3" marker-end="url(#arrow)"/>
+
+        <!-- Small Intestine -->
+        <rect x="120" y="212" width="740" height="140" rx="12" ry="12" fill="#ffffff" stroke="#cbd5e1"/>
+        <text x="490" y="240" text-anchor="middle" font-family="system-ui,Segoe UI,Arial" font-size="16">[Small Intestine]</text>
+        <text x="490" y="262" text-anchor="middle" font-family="system-ui,Segoe UI,Arial" font-size="14" fill="#475569">Fat‑soluble (A, D, E, K): absorbed with fats (need bile)</text>
+        <text x="490" y="284" text-anchor="middle" font-family="system-ui,Segoe UI,Arial" font-size="14" fill="#475569">Water‑soluble (B‑complex, C): absorbed into blood</text>
+        <line x1="490" y1="352" x2="490" y2="384" stroke="#16a34a" stroke-width="3" marker-end="url(#arrow)"/>
+
+        <!-- Blood & Lymph -->
+        <rect x="210" y="384" width="560" height="100" rx="12" ry="12" fill="#ffffff" stroke="#cbd5e1"/>
+        <text x="490" y="410" text-anchor="middle" font-family="system-ui,Segoe UI,Arial" font-size="16">[Blood & Lymph]</text>
+        <text x="490" y="434" text-anchor="middle" font-family="system-ui,Segoe UI,Arial" font-size="14" fill="#475569">Fat‑soluble → via lymph; stored in liver/fat</text>
+        <text x="490" y="454" text-anchor="middle" font-family="system-ui,Segoe UI,Arial" font-size="14" fill="#475569">Water‑soluble → directly into blood; excess in urine</text>
+        <line x1="490" y1="484" x2="490" y2="516" stroke="#16a34a" stroke-width="3"/>
+
+        <!-- End note -->
+        <text x="490" y="512" text-anchor="middle" font-family="system-ui,Segoe UI,Arial" font-size="13" fill="#334155">Outcome: Support metabolism, growth, and immunity (no calories)</text>
+      </svg>
+      <p class="muted" style="margin-top:8px">Single diagram contrasting fat‑soluble vs water‑soluble vitamin absorption & transport.</p>
+    </section>
+
+    <div style="height:14px"></div>
+
+    <!-- Recap -->
+    <section class="card recap no-break" aria-label="Quick Recap for Students">
+      <h3 style="margin-top:0">✅ Quick Recap for Students</h3>
+      <ul style="margin:0 0 6px 18px">
+        <li>Vitamins = <strong>organic regulators</strong> (not energy‑yielding).</li>
+        <li><strong>Fat‑soluble</strong> (A, D, E, K): stored; can be toxic in excess.</li>
+        <li><strong>Water‑soluble</strong> (C & B‑complex): not stored; need daily intake.</li>
+        <li>B‑complex = <strong>8 vitamins</strong> that act as <strong>coenzymes</strong>.</li>
+        <li>Classic deficiencies: B<sub>1</sub> → Beri‑beri, B<sub>3</sub> → Pellagra, C → Scurvy, D → Rickets.</li>
+      </ul>
+    </section>
+
+    <p class="muted" style="text-align:center; font-size:13px; margin-top:16px">Print on A4 (portrait). Want a Micronutrient Revision Chart next (Minerals + Vitamins side‑by‑side)?</p>
+  </div>
+</body>
+</html>

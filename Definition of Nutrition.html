@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Back to Home (paste anywhere inside <body>) -->
+<a href="unit3index.html" class="u3-back" aria-label="Back to Unit 3 Home">
+  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15.5 19l-7-7 7-7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  <span>Home</span>
+</a>
+
+<style>
+  /* Unit 3 Back Button: scoped, unobtrusive */
+  .u3-back{
+    position: fixed; inset: 14px auto auto 14px;
+    display: inline-flex; align-items: center; gap: 8px;
+    padding: 10px 14px; border-radius: 999px;
+    text-decoration: none; font: 600 14px/1.1 system-ui,-apple-system,Segoe UI,Roboto,Arial;
+    color: #0f172a; background: #ffffff; border: 1px solid #e2e8f0;
+    box-shadow: 0 8px 24px rgba(2,6,23,.12); z-index: 9999;
+    transition: transform .12s ease, box-shadow .2s ease, border-color .2s ease;
+  }
+  .u3-back:hover{ transform: translateY(-1px); border-color:#cbd5e1; box-shadow: 0 12px 28px rgba(2,6,23,.16); }
+  .u3-back:active{ transform: translateY(0); }
+  .u3-back svg{ width: 18px; height: 18px }
+  /* Dark mode */
+  @media (prefers-color-scheme: dark){
+    .u3-back{ color:#e5eefc; background:#0f172a; border-color:#1f2937; box-shadow:none }
+    .u3-back:hover{ border-color:#334155 }
+  }
+  /* Respect in-page anchored headers */
+  @media (max-width:480px){ .u3-back{ padding: 9px 12px } }
+  /* Hide in print */
+  @media print{ .u3-back{ display:none !important } }
+</style>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Definition of Nutrition – Quick Notes</title>
+  <style>
+    :root{
+      --bg:#f7fafc;           /* light gray */
+      --card:#ffffff;         /* white */
+      --ink:#0f172a;          /* slate-900 */
+      --muted:#475569;        /* slate-600 */
+      --accent:#16a34a;       /* green-600 */
+      --accent-2:#60a5fa;     /* blue-400 */
+      --border:#e2e8f0;       /* slate-200 */
+      --chip:#e7f5ec;         /* soft green */
+      --shadow:0 6px 24px rgba(2,6,23,.08);
+      --radius:16px;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0; font:16px/1.6 system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji";
+      color:var(--ink); background:var(--bg);
+    }
+    .wrap{max-width:1100px; margin:auto; padding:32px 16px}
+    .hero{
+      background:linear-gradient(160deg,#ecfdf5, #eff6ff);
+      border:1px solid var(--border); border-radius:var(--radius); padding:28px; box-shadow:var(--shadow);
+    }
+    h1{margin:0 0 10px 0; font-size:clamp(28px,4vw,40px)}
+    .subtitle{margin:4px 0 0 0; color:var(--muted)}
+    .grid{display:grid; gap:18px; grid-template-columns:repeat(12,1fr)}
+    .card{background:var(--card); border:1px solid var(--border); border-radius:var(--radius); box-shadow:var(--shadow); padding:20px}
+    .lead{font-size:18px}
+    ul.check{list-style:none; padding:0; margin:0}
+    ul.check li{display:flex; gap:10px; align-items:flex-start; margin:10px 0; background:var(--chip); border:1px solid #cfe9d9; padding:10px 12px; border-radius:12px}
+    .tick{flex:0 0 auto; width:22px; height:22px; border-radius:50%; display:grid; place-items:center; background:var(--accent); color:#fff; font-weight:700}
+    /* Table */
+    .table{width:100%; border-collapse:separate; border-spacing:0; overflow:hidden; border-radius:14px; border:1px solid var(--border)}
+    .table thead th{background:#f1f5f9; color:#0b1220; text-align:left; font-weight:700; padding:12px 14px; border-bottom:1px solid var(--border)}
+    .table td{padding:12px 14px; vertical-align:top; border-bottom:1px solid var(--border)}
+    .table tr:last-child td{border-bottom:none}
+    /* Diagram */
+    .diagram{display:grid; place-items:center; padding:10px}
+    .legend{font-size:14px; color:var(--muted); text-align:center; margin-top:6px}
+    .pill{display:inline-block; padding:6px 10px; border-radius:999px; background:#eef2ff; border:1px solid #dbeafe; font-weight:600}
+    .row{display:flex; flex-wrap:wrap; gap:16px}
+    .chip{padding:6px 10px; border-radius:999px; background:#f8fafc; border:1px dashed var(--border)}
+    .recap{background:#f0fdf4; border:1px solid #bbf7d0}
+    .muted{color:var(--muted)}
+    .footer{font-size:13px; color:var(--muted); text-align:center; margin-top:18px}
+    @media (max-width: 820px){
+      .grid{grid-template-columns:1fr}
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <section class="hero">
+      <h1>Definition of <span style="color:var(--accent)">Nutrition</span></h1>
+      <p class="subtitle">Student‑friendly quick notes with a mini diagram & recap</p>
+    </section>
+
+    <div style="height:14px"></div>
+
+    <section class="grid" style="align-items:start">
+      <div class="card" style="grid-column: span 7">
+        <p class="lead"><strong>Nutrition</strong> is the science of food and how the body uses it to keep us alive and healthy.</p>
+        <ul class="check">
+          <li><span class="tick">✓</span><div><strong>Energy production</strong> — to work, play, study, exercise.</div></li>
+          <li><span class="tick">✓</span><div><strong>Growth & development</strong> — bones, muscles, organs.</div></li>
+          <li><span class="tick">✓</span><div><strong>Repair & maintenance</strong> — healing cuts, replacing old cells.</div></li>
+          <li><span class="tick">✓</span><div><strong>Regulation of body functions</strong> — hormones, immunity, enzymes.</div></li>
+        </ul>
+        <p class="muted" style="margin-top:14px">In biology, nutrition moves through steps: <em>ingestion → digestion → absorption → assimilation → egestion</em>.</p>
+      </div>
+
+      <div class="card diagram" style="grid-column: span 5">
+        <!-- Simple SVG flow diagram -->
+        <svg viewBox="0 0 820 300" width="100%" height="auto" aria-label="Nutrition Flow Diagram">
+          <!-- Nodes -->
+          <g font-family="system-ui,Segoe UI,Arial" font-size="16" text-anchor="middle">
+            <rect x="30" y="30" rx="12" ry="12" width="200" height="56" fill="#ffffff" stroke="#cbd5e1"/>
+            <text x="130" y="62">FOOD</text>
+            <text x="130" y="82" fill="#64748b">(Rice, milk, fruits)</text>
+
+            <rect x="290" y="30" rx="12" ry="12" width="240" height="56" fill="#ffffff" stroke="#cbd5e1"/>
+            <text x="410" y="62">DIGESTION</text>
+            <text x="410" y="82" fill="#64748b">Mouth → Stomach → Small Intestine</text>
+
+            <rect x="580" y="30" rx="12" ry="12" width="210" height="56" fill="#ffffff" stroke="#cbd5e1"/>
+            <text x="685" y="62">ABSORPTION</text>
+            <text x="685" y="82" fill="#64748b">Nutrients enter blood</text>
+
+            <rect x="290" y="170" rx="12" ry="12" width="240" height="56" fill="#ffffff" stroke="#cbd5e1"/>
+            <text x="410" y="202">ASSIMILATION</text>
+            <text x="410" y="222" fill="#64748b">Energy, Growth, Repair</text>
+          </g>
+
+          <!-- Arrows -->
+          <defs>
+            <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+              <path d="M0,0 L0,6 L9,3 z" fill="#16a34a" />
+            </marker>
+          </defs>
+          <line x1="230" y1="58" x2="290" y2="58" stroke="#16a34a" stroke-width="3" marker-end="url(#arrow)"/>
+          <line x1="530" y1="58" x2="580" y2="58" stroke="#16a34a" stroke-width="3" marker-end="url(#arrow)"/>
+          <line x1="410" y1="86" x2="410" y2="170" stroke="#16a34a" stroke-width="3" marker-end="url(#arrow)"/>
+        </svg>
+        <p class="legend">Simple Diagram – <strong>Nutrition Flow</strong></p>
+      </div>
+    </section>
+
+    <div style="height:14px"></div>
+
+    <section class="card">
+      <h2 style="margin-top:0">Key Features of Nutrition</h2>
+      <div class="row muted" style="margin:-6px 0 10px 0">
+        <span class="chip">Aspect</span>
+        <span class="chip">Explanation (Simplified)</span>
+        <span class="chip">Example</span>
+      </div>
+      <table class="table" role="table" aria-label="Key Features of Nutrition">
+        <thead>
+          <tr>
+            <th scope="col">Aspect</th>
+            <th scope="col">Explanation (Simplified)</th>
+            <th scope="col">Example</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Meaning</strong></td>
+            <td>Process of obtaining and using food by organisms</td>
+            <td>Humans eating rice & vegetables</td>
+          </tr>
+          <tr>
+            <td><strong>Why Important?</strong></td>
+            <td>Provides energy, builds tissues, regulates functions</td>
+            <td>Running, growth, immunity</td>
+          </tr>
+          <tr>
+            <td><strong>Main Steps</strong></td>
+            <td>Eating, digesting, absorbing, and using food</td>
+            <td>Food → Nutrients → Energy</td>
+          </tr>
+          <tr>
+            <td><strong>Types</strong></td>
+            <td>Autotrophic (make their own food), Heterotrophic (depend on others)</td>
+            <td>Plants vs. Humans</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <div style="height:14px"></div>
+
+    <section class="card recap">
+      <h3 style="margin-top:0">✅ Quick Recap</h3>
+      <p><span class="pill">Nutrition</span> = <strong>Food in</strong> → <strong>Digestion</strong> → <strong>Absorption</strong> → <strong>Energy, Growth & Health</strong> out.</p>
+    </section>
+
+    <p class="footer">Tip: Use this as a class handout or include it in your Y‑EduGate notes.</p>
+  </div>
+</body>
+</html>

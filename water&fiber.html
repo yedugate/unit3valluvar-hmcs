@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Back to Home (paste anywhere inside <body>) -->
+<a href="unit3index.html" class="u3-back" aria-label="Back to Unit 3 Home">
+  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15.5 19l-7-7 7-7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  <span>Home</span>
+</a>
+
+<style>
+  /* Unit 3 Back Button: scoped, unobtrusive */
+  .u3-back{
+    position: fixed; inset: 14px auto auto 14px;
+    display: inline-flex; align-items: center; gap: 8px;
+    padding: 10px 14px; border-radius: 999px;
+    text-decoration: none; font: 600 14px/1.1 system-ui,-apple-system,Segoe UI,Roboto,Arial;
+    color: #0f172a; background: #ffffff; border: 1px solid #e2e8f0;
+    box-shadow: 0 8px 24px rgba(2,6,23,.12); z-index: 9999;
+    transition: transform .12s ease, box-shadow .2s ease, border-color .2s ease;
+  }
+  .u3-back:hover{ transform: translateY(-1px); border-color:#cbd5e1; box-shadow: 0 12px 28px rgba(2,6,23,.16); }
+  .u3-back:active{ transform: translateY(0); }
+  .u3-back svg{ width: 18px; height: 18px }
+  /* Dark mode */
+  @media (prefers-color-scheme: dark){
+    .u3-back{ color:#e5eefc; background:#0f172a; border-color:#1f2937; box-shadow:none }
+    .u3-back:hover{ border-color:#334155 }
+  }
+  /* Respect in-page anchored headers */
+  @media (max-width:480px){ .u3-back{ padding: 9px 12px } }
+  /* Hide in print */
+  @media print{ .u3-back{ display:none !important } }
+</style>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Water & Fiber – Vital but Non‑Energy Nutrients (Printable)</title>
+  <style>
+    :root{
+      --bg:#f7fafc; --card:#ffffff; --ink:#0f172a; --muted:#475569; --accent:#16a34a; --accent-2:#0ea5e9; --border:#e2e8f0; --shadow:0 6px 24px rgba(2,6,23,.08); --radius:16px;
+    }
+    *{box-sizing:border-box}
+    body{margin:0; color:var(--ink); background:var(--bg); font:16px/1.6 system-ui, -apple-system, Segoe UI, Roboto, Arial}
+    .wrap{max-width:1100px; margin:auto; padding:28px 16px}
+    .hero{background:linear-gradient(160deg,#ecfdf5,#eff6ff); border:1px solid var(--border); border-radius:var(--radius); padding:24px; box-shadow:var(--shadow)}
+    h1{margin:0 0 6px 0; font-size:clamp(28px,4vw,40px)}
+    .subtitle{margin:0; color:var(--muted)}
+    .card{background:var(--card); border:1px solid var(--border); border-radius:var(--radius); padding:18px 20px; box-shadow:var(--shadow)}
+    .lead{font-size:18px}
+    .grid{display:grid; gap:18px; grid-template-columns:repeat(12,1fr)}
+    .muted{color:var(--muted)}
+    .recap{background:#f0fdf4; border:1px solid #bbf7d0}
+    .tag{display:inline-block; padding:6px 10px; border-radius:999px; border:1px solid var(--border); background:#f8fafc; margin:4px 6px 0 0; font-size:14px}
+    /* Tables */
+    .table{width:100%; border-collapse:separate; border-spacing:0; overflow:hidden; border-radius:14px; border:1px solid var(--border); page-break-inside:auto}
+    .table thead th{background:#f1f5f9; color:#0b1220; text-align:left; font-weight:700; padding:10px 12px; border-bottom:1px solid var(--border)}
+    .table td{padding:10px 12px; vertical-align:top; border-bottom:1px solid var(--border)}
+    .table tr:last-child td{border-bottom:none}
+    .note{font-size:13px; color:var(--muted)}
+    .no-break{page-break-inside:avoid}
+    /* Print Styles */
+    @page { size: A4; margin: 14mm; }
+    @media print{
+      body{background:#fff}
+      .wrap{max-width:none; padding:0}
+      .hero, .card{box-shadow:none}
+      .hero{background:#fff}
+      .table thead th{background:#eaf0f8; -webkit-print-color-adjust:exact; print-color-adjust:exact}
+      a[href]:after{content:""}
+    }
+    @media (max-width: 840px){ .grid{grid-template-columns:1fr} }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <section class="hero no-break">
+      <h1>Water & Fiber – <span style="color:var(--accent)">Vital but Non‑Energy Nutrients</span></h1>
+      <p class="subtitle">11th–12th grade • Definition & basics • Biochemistry • Sources & functions • One digestion/absorption diagram • Printable</p>
+    </section>
+
+    <div style="height:14px"></div>
+
+    <!-- WATER -->
+    <section class="card no-break" aria-label="Water – The Universal Solvent">
+      <h2 style="margin-top:0">1) Water – The Universal Solvent</h2>
+
+      <h3 style="margin-top:0.2rem">Definition & Biochemistry</h3>
+      <ul style="margin:0 0 6px 18px">
+        <li>Water = <strong>H<sub>2</sub>O</strong>, the most abundant molecule in the body (~<strong>60–70%</strong> of body weight).</li>
+        <li>Present as <strong>intracellular</strong> and <strong>extracellular</strong> fluids.</li>
+        <li>Medium for virtually all <strong>biochemical reactions</strong>.</li>
+      </ul>
+
+      <h3 style="margin-top:0.8rem">Sources</h3>
+      <p>Drinking water, milk, fruits (melon, orange), vegetables (cucumber, tomato).</p>
+
+      <h3 style="margin-top:0.8rem">Functions</h3>
+      <table class="table" aria-label="Water functions">
+        <thead><tr><th>Function</th><th>Explanation (Simple)</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Solvent</strong></td><td>Dissolves nutrients; enzymes work in water</td></tr>
+          <tr><td><strong>Transport</strong></td><td>Carries nutrients & waste in blood/urine</td></tr>
+          <tr><td><strong>Temperature control</strong></td><td>Sweating helps maintain body heat</td></tr>
+          <tr><td><strong>Lubrication</strong></td><td>Joint fluid, saliva, digestive juices</td></tr>
+          <tr><td><strong>Metabolism</strong></td><td>Required for hydrolysis reactions</td></tr>
+        </tbody>
+      </table>
+
+      <div class="grid">
+        <div class="card" style="grid-column:span 6">
+          <h3 style="margin-top:0">Deficiency</h3>
+          <p>Dehydration → thirst, fatigue, kidney stones.</p>
+        </div>
+        <div class="card" style="grid-column:span 6">
+          <h3 style="margin-top:0">Excess</h3>
+          <p>Water intoxication → electrolyte imbalance.</p>
+        </div>
+      </div>
+
+      <h3 style="margin-top:0.8rem">RDA</h3>
+      <p><strong>~2–3 liters/day</strong> (varies with age, climate, activity).</p>
+    </section>
+
+    <div style="height:14px"></div>
+
+    <!-- FIBER -->
+    <section class="card no-break" aria-label="Fiber – Dietary Fiber / Roughage">
+      <h2 style="margin-top:0">2) Fiber (Dietary Fiber / Roughage)</h2>
+
+      <h3 style="margin-top:0.2rem">Definition & Biochemistry</h3>
+      <ul style="margin:0 0 6px 18px">
+        <li><strong>Non‑digestible carbohydrates</strong> in plant foods.</li>
+        <li>Human enzymes cannot break them; some are <strong>fermented by gut bacteria</strong>.</li>
+        <li>Types:
+          <ul style="margin:6px 0 6px 18px">
+            <li><strong>Soluble fiber</strong> – dissolves in water, forms gel (e.g., <em>pectin, gums</em>).</li>
+            <li><strong>Insoluble fiber</strong> – adds bulk to stool (e.g., <em>cellulose, lignin</em>).</li>
+          </ul>
+        </li>
+      </ul>
+
+      <h3 style="margin-top:0.8rem">Sources</h3>
+      <p>Whole grains (brown rice, oats), legumes, fruits (apple, banana), vegetables (carrot, cabbage), nuts & seeds.</p>
+
+      <h3 style="margin-top:0.8rem">Functions</h3>
+      <table class="table" aria-label="Fiber functions">
+        <thead><tr><th>Function</th><th>Explanation (Simple)</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Digestion aid</strong></td><td>Adds bulk → prevents constipation</td></tr>
+          <tr><td><strong>Heart health</strong></td><td>Lowers cholesterol</td></tr>
+          <tr><td><strong>Diabetes control</strong></td><td>Slows sugar absorption</td></tr>
+          <tr><td><strong>Colon health</strong></td><td>Reduces colon cancer risk</td></tr>
+          <tr><td><strong>Weight control</strong></td><td>Gives satiety (feeling of fullness)</td></tr>
+        </tbody>
+      </table>
+
+      <div class="grid">
+        <div class="card" style="grid-column:span 6">
+          <h3 style="margin-top:0">Deficiency</h3>
+          <p>Constipation, piles, increased risk of colon cancer.</p>
+        </div>
+        <div class="card" style="grid-column:span 6">
+          <h3 style="margin-top:0">Excess</h3>
+          <p>Bloating, diarrhea, reduced absorption of calcium/iron/zinc.</p>
+        </div>
+      </div>
+
+      <h3 style="margin-top:0.8rem">RDA</h3>
+      <p><strong>~25–40 g/day</strong> for adults.</p>
+    </section>
+
+    <div style="height:14px"></div>
+
+    <!-- Water vs Fiber table -->
+    <section class="card no-break" aria-label="Water vs Fiber (At a Glance)">
+      <h2 style="margin-top:0">3) Water vs Fiber (At a Glance)</h2>
+      <table class="table" aria-label="Water vs Fiber table">
+        <thead>
+          <tr>
+            <th>Nutrient</th><th>Biochemistry</th><th>Sources</th><th>Functions</th><th>Deficiency</th><th>Excess</th><th>RDA</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Water</strong></td>
+            <td>H<sub>2</sub>O molecule; solvent in cells</td>
+            <td>Drinking water, fruits, milk</td>
+            <td>Solvent, transport, temperature regulation</td>
+            <td>Dehydration, kidney stones</td>
+            <td>Water intoxication</td>
+            <td>~2–3 L/day</td>
+          </tr>
+          <tr>
+            <td><strong>Fiber</strong></td>
+            <td>Non‑digestible carbs (cellulose, pectin)</td>
+            <td>Whole grains, fruits, vegetables, legumes</td>
+            <td>Adds bulk, lowers cholesterol, controls sugar</td>
+            <td>Constipation, colon issues</td>
+            <td>Bloating, mineral loss</td>
+            <td>~25–40 g/day</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <div style="height:14px"></div>
+
+    <!-- Diagram -->
+    <section class="card no-break" aria-label="Digestion & Absorption – Water & Fiber">
+      <h2 style="margin-top:0">4) Digestion & Absorption – Water & Fiber</h2>
+      <svg viewBox="0 0 980 560" width="100%" height="auto" aria-label="Water and fiber digestion flow">
+        <defs>
+          <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+            <path d="M0,0 L0,6 L9,3 z" fill="#16a34a" />
+          </marker>
+        </defs>
+        <!-- Food -->
+        <rect x="310" y="20" width="360" height="48" rx="12" ry="12" fill="#ffffff" stroke="#cbd5e1"/>
+        <text x="490" y="50" text-anchor="middle" font-family="system-ui,Segoe UI,Arial" font-size="16">FOOD (Fruits, Vegetables, Whole grains, Water)</text>
+        <line x1="490" y1="68" x2="490" y2="100" stroke="#16a34a" stroke-width="3" marker-end="url(#arrow)"/>
+
+        <!-- Mouth -->
+        <rect x="260" y="100" width="460" height="66" rx="12" ry="12" fill="#ffffff" stroke="#cbd5e1"/>
+        <text x="490" y="128" text-anchor="middle" font-family="system-ui,Segoe UI,Arial" font-size="16">[Mouth] – Chewing; saliva moistens</text>
+        <line x1="490" y1="166" x2="490" y2="198" stroke="#16a34a" stroke-width="3" marker-end="url(#arrow)"/>
+
+        <!-- Stomach -->
+        <rect x="240" y="198" width="500" height="80" rx="12" ry="12" fill="#ffffff" stroke="#cbd5e1"/>
+        <text x="490" y="226" text-anchor="middle" font-family="system-ui,Segoe UI,Arial" font-size="16">[Stomach] – Water passes; fiber adds bulk</text>
+        <line x1="490" y1="278" x2="490" y2="310" stroke="#16a34a" stroke-width="3" marker-end="url(#arrow)"/>
+
+        <!-- Small Intestine -->
+        <rect x="120" y="310" width="740" height="120" rx="12" ry="12" fill="#ffffff" stroke="#cbd5e1"/>
+        <text x="490" y="340" text-anchor="middle" font-family="system-ui,Segoe UI,Arial" font-size="16">[Small Intestine]</text>
+        <text x="490" y="362" text-anchor="middle" font-family="system-ui,Segoe UI,Arial" font-size="14" fill="#475569">Water: largely absorbed into blood</text>
+        <text x="490" y="382" text-anchor="middle" font-family="system-ui,Segoe UI,Arial" font-size="14" fill="#475569">Fiber: not digested; some <tspan font-style="italic">soluble</tspan> fiber fermented by gut bacteria</text>
+        <line x1="490" y1="430" x2="490" y2="462" stroke="#16a34a" stroke-width="3" marker-end="url(#arrow)"/>
+
+        <!-- Large Intestine -->
+        <rect x="220" y="462" width="540" height="80" rx="12" ry="12" fill="#ffffff" stroke="#cbd5e1"/>
+        <text x="490" y="492" text-anchor="middle" font-family="system-ui,Segoe UI,Arial" font-size="16">[Large Intestine]</text>
+        <text x="490" y="514" text-anchor="middle" font-family="system-ui,Segoe UI,Arial" font-size="14" fill="#475569">More water absorbed • Fiber adds bulk → easy stool passage</text>
+
+        <!-- End result note -->
+        <text x="490" y="548" text-anchor="middle" font-family="system-ui,Segoe UI,Arial" font-size="13" fill="#334155">End result: Hydration, soft stool, better digestion</text>
+      </svg>
+      <p class="muted" style="margin-top:8px">Single diagram showing the different fates of water and dietary fiber in the gut.</p>
+    </section>
+
+    <div style="height:14px"></div>
+
+    <!-- Recap -->
+    <section class="card recap no-break" aria-label="Quick Recap">
+      <h3 style="margin-top:0">✅ Quick Recap for Students</h3>
+      <ul style="margin:0 0 6px 18px">
+        <li><strong>Water</strong> → life solvent (~2–3 L/day); deficiency causes dehydration.</li>
+        <li><strong>Fiber</strong> → non‑digestible carbs; keeps gut healthy (~25–40 g/day).</li>
+        <li>Both are <strong>non‑energy nutrients</strong> but essential for overall health.</li>
+      </ul>
+    </section>
+
+    <p class="muted" style="text-align:center; font-size:13px; margin-top:16px">Print on A4 (portrait). Want a single “Macronutrient Comparison Chart” next (Carbs vs Proteins vs Fats vs Water vs Fiber)?</p>
+  </div>
+</body>
+</html>
